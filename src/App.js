@@ -12,49 +12,15 @@ import Map, {
 import {
   clusterCountLayer,
   clusterLayer,
-  DATA,
+  polygonBorderLayer,
   polygonLayer,
   unclusteredPointLayer,
+  UnitedStatesBorderLayer,
+  UnitedStatesLayer,
 } from "./layer";
 import logo from "./logo.svg";
-
-const polygonData = {
-  type: "Feature",
-  properties: {
-    id: "polygon_123456",
-    mag: 2.3,
-    time: 1507425650893,
-    felt: null,
-    tsunami: 0,
-  },
-  geometry: {
-    type: "Polygon",
-    coordinates: [
-      [
-        [-67.13734, 45.13745],
-        [-66.96466, 44.8097],
-        [-68.03252, 44.3252],
-        [-69.06, 43.98],
-        [-70.11617, 43.68405],
-        [-70.64573, 43.09008],
-        [-70.75102, 43.08003],
-        [-70.79761, 43.21973],
-        [-70.98176, 43.36789],
-        [-70.94416, 43.46633],
-        [-71.08482, 45.30524],
-        [-70.66002, 45.46022],
-        [-70.30495, 45.91479],
-        [-70.00014, 46.69317],
-        [-69.23708, 47.44777],
-        [-68.90478, 47.18479],
-        [-68.2343, 47.35462],
-        [-67.79035, 47.06624],
-        [-67.79141, 45.70258],
-        [-67.13734, 45.13745],
-      ],
-    ],
-  },
-};
+import { US_DATA } from "./data";
+import { smallAreaOFUS } from "./area";
 
 
 
@@ -67,13 +33,13 @@ const App = () => {
 
   const [data, setData] = useState(null);
   const [pointData, setPointData] = useState(null);
+  const [onHover, setOnHover] = useState(false);
   const mapRef = useRef(null);
 
   useEffect(() => {
     fetch("https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson")
       .then((res) => res.json())
       .then((data) => {
-        // const newData = { ...data, features: [...data.features, polygonData] };
         setData(data);
       });
   }, []);
@@ -81,19 +47,22 @@ const App = () => {
   const onMapPointClickHandler = (event) => {
     event.preventDefault();
     const feature = event.features[0];
-    if (feature.geometry.type === "Polygon") {
-      console.log(feature);
+    // console.log(feature)
+    // if (feature?.properties?.id) {
+    //   setPointData({
+    //     ...feature.properties,
+    //     ...feature.geometry,
+    //   });
+    // }
+    if(feature.geometry.type === "MultiPolygon" || feature.geometry.type === "Polygon") {
+      setOnHover(true)
     }
-    if (feature?.properties?.id) {
-      setPointData({
-        ...feature.properties,
-        ...feature.geometry,
-      });
-    }
-    // console.log(mapRef.current.getMap().getBounds().toArray())
   };
 
-  const onPopUpCloseHandler = () => setPointData(null);
+  const onPopUpCloseHandler = () => {
+    setPointData(null)
+    setOnHover(false)
+  };
 
   return (
     <div className="App">
@@ -111,6 +80,7 @@ const App = () => {
           clusterLayer.id,
           unclusteredPointLayer.id,
           clusterCountLayer.id,
+          polygonLayer().id
         ]}
         onMouseEnter={onMapPointClickHandler}
         onMouseLeave={onPopUpCloseHandler}
@@ -126,7 +96,22 @@ const App = () => {
           <Layer {...clusterLayer} />
           <Layer {...clusterCountLayer} />
           <Layer {...unclusteredPointLayer} />
-          {/* <Layer {...polygonLayer} /> */}
+        </Source>
+        <Source
+          id="smallAreaOfUnitedStates"
+          type="geojson"
+          data="https://docs.mapbox.com/mapbox-gl-js/assets/us_states.geojson"
+        >
+          <Layer {...polygonLayer(onHover)} beforeId={clusterLayer.id} />
+          <Layer {...polygonBorderLayer} />
+        </Source>
+        <Source
+          id="us_multipolygon"
+          type="geojson"
+          data={US_DATA}
+        >
+          <Layer {...UnitedStatesLayer} beforeId={clusterLayer.id} />
+          <Layer {...UnitedStatesBorderLayer} />
         </Source>
         <NavigationControl position="top-right" />
         <FullscreenControl />

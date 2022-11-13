@@ -42,15 +42,65 @@ export const unclusteredPointLayer = {
   },
 };
 
-export const polygonLayer = {
+export const polygonLayer = (onHover = false) => ({
   id: "polygon-layer",
   type: "fill",
-  source: "earthquakes", // reference the data source
+  source: "smallAreaOfUnitedStates",
   layout: {},
   paint: {
-    "fill-outline-color": "#0040c8",
-    "fill-color": "#0080ff", // blue color fill
-    "fill-opacity": 0.5,
+    // "fill-outline-color": "#0040c8",
+    "fill-color": "#A68777", // blue color fill #FBE7C6
+    "fill-opacity": onHover ? 1 : 0.5,
+  },
+});
+
+export const areaLayer = {
+  id: "area-layer",
+  type: "fill",
+  source: "smallAreaOfUnitedStates",
+  layout: {},
+  paint: {
+    "fill-color": "#627BC1",
+    "fill-opacity": [
+      "case",
+      ["boolean", ["feature-state", "hover"], false],
+      1,
+      0.5,
+    ],
+  },
+};
+
+export const polygonBorderLayer = {
+  id: "borders",
+  type: "line",
+  source: "smallAreaOfUnitedStates",
+  layout: {},
+  paint: {
+    "line-color": "#627BC1",
+    "line-width": 2,
+  },
+};
+
+export const UnitedStatesLayer = {
+  id: "united_states",
+  type: "fill",
+  source: "us_multipolygon",
+  layout: {},
+  paint: {
+    "fill-outline-color": "#F7F1D9",
+    "fill-color": "#F7F1D9",
+    "fill-opacity": 0.55,
+  },
+};
+
+export const UnitedStatesBorderLayer = {
+  id: "united_states_border_layer",
+  type: "line",
+  source: "us_multipolygon",
+  layout: {},
+  paint: {
+    "line-color": "#C1BDA9",
+    "line-width": 3,
   },
 };
 
