@@ -29,17 +29,8 @@ const MapArea = () => {
     zoom: 3.5,
   });
   console.log("MapArea rendered - ", ++renderCount)
-  const [data, setData] = useState(null);
   const [pointData, setPointData] = useState(null);
   const mapRef = useRef(null);
-
-  useEffect(() => {
-    fetch("https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
 
   useEffect(() => {
     if (!mapRef.current) {
@@ -62,6 +53,14 @@ const MapArea = () => {
       }
     });
 
+    mapRef.current.on("mousemove", unclusteredPointLayer.id, (e) => {
+      mapRef.current.getCanvas().style.cursor = 'pointer';
+    })
+
+    mapRef.current.on("mouseleave", unclusteredPointLayer.id, (e) => {
+      mapRef.current.getCanvas().style.cursor = 'grab';
+    })
+
     mapRef.current.on("mouseleave", "area-layer", () => {
       if (hoverStatedId !== null) {
         mapRef.current.setFeatureState(
@@ -75,8 +74,10 @@ const MapArea = () => {
 
   const onMapPointClickHandler = (event) => {
     event.preventDefault();
-    const feature = event.features[0];
-    console.log(feature);
+    // const feature = event.features[0];
+    // console.log(feature);
+    // console.log(mapRef.current)
+    // console.log(mapRef.current.getLayer("area-layer"))
   };
 
   const onPopUpCloseHandler = () => {
@@ -107,10 +108,11 @@ const MapArea = () => {
         <Source
           id="earthquakes"
           type="geojson"
-          data={data}
+          data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
           cluster={true}
           clusterMaxZoom={22}
           clusterRadius={50}
+          generateId={true}
         >
           <Layer {...clusterLayer} />
           <Layer {...clusterCountLayer} />
@@ -120,13 +122,14 @@ const MapArea = () => {
           id="smallAreaOfUnitedStates"
           type="geojson"
           data="https://docs.mapbox.com/mapbox-gl-js/assets/us_states.geojson"
+          generateId={true}
         >
           <Layer {...areaLayer} beforeId={clusterLayer.id} />
-          <Layer {...polygonBorderLayer} />
+          <Layer {...polygonBorderLayer} beforeId={clusterLayer.id}  />
         </Source>
         <Source id="us_multipolygon" type="geojson" data={US_DATA}>
           <Layer {...UnitedStatesLayer} beforeId={clusterLayer.id} />
-          <Layer {...UnitedStatesBorderLayer} />
+          <Layer {...UnitedStatesBorderLayer} beforeId={clusterLayer.id}  />
         </Source>
         <NavigationControl position="top-right" />
         <FullscreenControl />
