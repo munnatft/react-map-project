@@ -20,7 +20,6 @@ import {
 } from "./layer";
 import logo from "./logo.svg";
 import { US_DATA } from "./data";
-import { smallAreaOFUS } from "./area";
 
 
 
