@@ -78,7 +78,7 @@ const IsraelMap = () => {
       event.features.length > 0 &&
       event.features[0].layer.id === Israel_District_Layer.id
     ) {
-      console.log(event.Features[0])
+      console.log(event.features[0])
     }
   };
 
@@ -102,7 +102,7 @@ const IsraelMap = () => {
           Israel_District_Layer.id,
         ]}
         onLoad={onMapLoad}
-        onClick={onDistrictAreaClickHandler}
+        onDblClick={onDistrictAreaClickHandler}
       >
         <Source
           id="israel-places-data"
