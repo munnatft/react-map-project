@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./App.css";
 import Map, {
   NavigationControl,
   Layer,
   Source,
+  Popup,
 } from "react-map-gl";
 import {
   clusterCountLayer,
@@ -12,32 +13,25 @@ import {
   unclusteredPointLayer,
 } from "./layer";
 import {
-  Israel_Border_Layer,
   Israel_City_Border_Layer,
   Israel_City_Layer,
   Israel_District_Border_Layer,
-  Israel_Layer,
+  Israel_District_Layer,
 } from "./IsraelLayer";
 import { PLACES_IN_ISRAEL } from "./Israel/places";
 import { ISRAEL_DISTRICTS_DATA } from "./Israel/district";
-import { ISRAEL_DATA } from "./Israel/state";
 import { ISRAEL_CITIES } from "./Israel/cities";
 
-let renderCount = 0;
-let hoveredLayerId = null;
 const IsraelMap = () => {
   const [viewState, setViewState] = useState({
     longitude: 34.8516,
     latitude: 31.0461,
     zoom: 5,
   });
-  console.log("MapArea rendered - ", ++renderCount);
   const mapRef = useRef(null);
+  const [pointDetails, setPointDetails] = useState(null)
 
-  useEffect(() => {
-    if (!mapRef.current) {
-      return;
-    }
+  const onMapLoad = React.useCallback(() => {
     let hoverStatedId = null;
     mapRef.current.on("mousemove", Israel_City_Layer.id, (e) => {
       if (e.features.length > 0) {
@@ -64,40 +58,25 @@ const IsraelMap = () => {
       }
       hoverStatedId = null;
     });
-  });
+  }, []);
 
   const onMapPointClickHandler = (event) => {
-    event.preventDefault();
-    mapRef.current.on("mousemove", unclusteredPointLayer.id, (e) => {
-      if(e.features.length > 0) {
-        if (hoveredLayerId !== null) {
-          mapRef.current.setFeatureState(
-            { source: "israel-places-data", id: hoveredLayerId },
-            { hover: false }
-          );
-        }
-        hoveredLayerId = e.features[0].id;
-        mapRef.current.getCanvas().style.cursor = 'pointer';
-        mapRef.current.setFeatureState(
-          { source: "israel-places-data", id: hoveredLayerId },
-          { hover: true }
-        );
-      }
-    })
+    if(event.features.length > 0 && event.features[0].layer.id === unclusteredPointLayer.id) {
+      console.log(event.features[0])
+      setPointDetails(event.features[0])
+    }
+    
   };
 
   const onPopUpCloseHandler = () => {
-    mapRef.current.on("mouseleave", unclusteredPointLayer.id, (e) => {
-      if(hoveredLayerId !== null) {
-        mapRef.current.getCanvas().style.cursor = 'grab';
-        mapRef.current.setFeatureState(
-          { source: "israel-places-data", id: hoveredLayerId },
-          { hover: false }
-        );
-      }
-      hoveredLayerId = null;
-    })
+    setPointDetails(null)
   };
+
+  const onDistrictDoubleCLickHandler = (e) => {
+    if(e.features.length > 0 && e.features[0].layer.id === Israel_District_Layer.id) {
+      console.log(e.features[0])
+    }
+  }
 
   return (
     <div className="App">
@@ -115,8 +94,11 @@ const IsraelMap = () => {
           clusterLayer.id,
           unclusteredPointLayer.id,
           clusterCountLayer.id,
+          Israel_District_Layer.id,
           Israel_City_Layer.id,
         ]}
+        onLoad={onMapLoad}
+        onDblClick={onDistrictDoubleCLickHandler}
         onMouseMove={onMapPointClickHandler}
         onMouseLeave={onPopUpCloseHandler}
       >
@@ -145,13 +127,16 @@ const IsraelMap = () => {
           type="geojson"
           data={ISRAEL_DISTRICTS_DATA}
         >
+          <Layer {...Israel_District_Layer} beforeId={clusterLayer.id} />
           <Layer {...Israel_District_Border_Layer} beforeId={clusterLayer.id} />
         </Source>
-        <Source id="israel_source" type="geojson" data={ISRAEL_DATA}>
-          <Layer {...Israel_Layer} beforeId={clusterLayer.id} />
-          <Layer {...Israel_Border_Layer} beforeId={clusterLayer.id} />
-        </Source>
         <NavigationControl position="top-right" showCompass={false} />
+        {
+          pointDetails &&
+          <Popup longitude={pointDetails.geometry.coordinates[0]} latitude={pointDetails.geometry.coordinates[1]} >
+            <div className="marker">{pointDetails.properties.name}</div>
+          </Popup>
+        }
       </Map>
     </div>
   );

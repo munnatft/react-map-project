@@ -37,12 +37,7 @@ export const unclusteredPointLayer = {
   paint: {
     "circle-color": "#11b4da",
     "circle-radius": 5,
-    "circle-stroke-width": [
-      "case",
-      ["boolean", ["feature-state", "hover"], false],
-      1,
-      5,
-    ],
+    "circle-stroke-width": 2,
     "circle-stroke-color": "#8ecae6",
   },
 };

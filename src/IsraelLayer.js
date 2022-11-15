@@ -26,13 +26,7 @@ export const Israel_District_Layer = {
   source: "israel_district",
   layout: {},
   paint: {
-    "fill-color": "#F7F1D9",
-    "fill-opacity": [
-      "case",
-      ["boolean", ["feature-state", "hover"], false],
-      0.65,
-      0,
-    ],
+    "fill-color": "transparent",  
   },
 };
 
@@ -43,7 +37,7 @@ export const Israel_District_Border_Layer = {
   layout: {},
   paint: {
     "line-color": "#C1BDA9",
-    "line-width": 2,
+    "line-width": 5,
   },
 };
 
@@ -53,11 +47,11 @@ export const Israel_City_Layer = {
   source: "israel_city",
   layout: {},
   paint: {
-    "fill-color": "#F7F1D9",
+    "fill-color": "#b37400",
     "fill-opacity": [
       "case",
       ["boolean", ["feature-state", "hover"], false],
-      0.65,
+      1,
       0,
     ],
   },
