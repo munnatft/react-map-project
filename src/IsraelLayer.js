@@ -28,15 +28,13 @@ export const Israel_District_Layer = {
   paint: {
     "fill-color": [
       "case",
-      // ["boolean", ["feature-state", "clicked"], true],
-      // "#64bdbb", // if selected true, paint in blue
-      // "#888888", // else paint in gray
-      // ["boolean", ["feature-state", "hover"], false],
-      // "#64bdbb",
+      ["boolean", ["feature-state", "hover"], false],
+      "#64bdbb",
       ["boolean", ["feature-state", "clicked"], false],
       "#888888",
       "transparent"
     ],
+    "fill-opacity": 0.2,
   },
 };
 
