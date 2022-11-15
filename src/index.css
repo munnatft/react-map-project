@@ -29,7 +29,7 @@ code {
   display: none;
 }
 
-/* .mapboxgl-popup {
-  top: -10px !important;
-  left: 10px !important;
-} */
+.mapboxgl-popup {
+  /* top: -10px !important;
+  left: 10px !important; */
+}

@@ -1,12 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./App.css";
-import Map, {
-  NavigationControl,
-  Layer,
-  Source,
-  Popup,
-} from "react-map-gl";
+import Map, { NavigationControl, Layer, Source, Popup } from "react-map-gl";
 import {
   clusterCountLayer,
   clusterLayer,
@@ -22,6 +17,8 @@ import { PLACES_IN_ISRAEL } from "./Israel/places";
 import { ISRAEL_DISTRICTS_DATA } from "./Israel/district";
 import { ISRAEL_CITIES } from "./Israel/cities";
 
+let hoverStatedId = null;
+let clickedId = null;
 const IsraelMap = () => {
   const [viewState, setViewState] = useState({
     longitude: 34.8516,
@@ -29,54 +26,75 @@ const IsraelMap = () => {
     zoom: 5,
   });
   const mapRef = useRef(null);
-  const [pointDetails, setPointDetails] = useState(null)
+  const [pointDetails, setPointDetails] = useState(null);
 
-  const onMapLoad = React.useCallback(() => {
-    let hoverStatedId = null;
-    mapRef.current.on("mousemove", Israel_City_Layer.id, (e) => {
+  const onMapLoad = useCallback(() => {
+    mapRef.current.on("mousemove", Israel_District_Layer.id, (e) => {
       if (e.features.length > 0) {
         if (hoverStatedId !== null) {
           mapRef.current.setFeatureState(
-            { source: "israel_city", id: hoverStatedId },
+            { source: "israel_district", id: hoverStatedId },
             { hover: false }
           );
         }
         hoverStatedId = e.features[0].id;
         mapRef.current.setFeatureState(
-          { source: "israel_city", id: hoverStatedId },
+          { source: "israel_district", id: hoverStatedId },
           { hover: true }
         );
       }
     });
 
-    mapRef.current.on("mouseleave", Israel_City_Layer.id, () => {
+    mapRef.current.on("mouseleave", Israel_District_Layer.id, () => {
       if (hoverStatedId !== null) {
         mapRef.current.setFeatureState(
-          { source: "israel_city", id: hoverStatedId },
+          { source: "israel_district", id: hoverStatedId },
           { hover: false }
         );
       }
       hoverStatedId = null;
     });
+
+      mapRef.current.on("click", Israel_District_Layer.id, (e) => {
+        if (e.features.length > 0) {
+          if (clickedId) {
+            mapRef.current.setFeatureState(
+              { source: "israel_district", id: clickedId },
+              { clicked: false }
+            );
+          }
+          clickedId = e.features[0].id;
+          mapRef.current.setFeatureState(
+            { source: "israel_district", id: clickedId },
+            { clicked: true }
+          );
+        }
+      });
+
   }, []);
 
   const onMapPointClickHandler = (event) => {
-    if(event.features.length > 0 && event.features[0].layer.id === unclusteredPointLayer.id) {
-      console.log(event.features[0])
-      setPointDetails(event.features[0])
+    if (
+      event.features.length > 0 &&
+      event.features[0].layer.id === unclusteredPointLayer.id
+    ) {
+      console.log(mapRef.current);
+      setPointDetails(event.features[0]);
     }
-    
   };
 
   const onPopUpCloseHandler = () => {
-    setPointDetails(null)
+    setPointDetails(null);
   };
 
   const onDistrictDoubleCLickHandler = (e) => {
-    if(e.features.length > 0 && e.features[0].layer.id === Israel_District_Layer.id) {
-      console.log(e.features[0])
+    if (
+      e.features.length > 0 &&
+      e.features[0].layer.id === Israel_District_Layer.id
+    ) {
+      console.log(e.features[0]);
     }
-  }
+  };
 
   return (
     <div className="App">
@@ -114,11 +132,7 @@ const IsraelMap = () => {
           <Layer {...clusterCountLayer} />
           <Layer {...unclusteredPointLayer} />
         </Source>
-        <Source
-          id="israel_city"
-          type="geojson"
-          data={ISRAEL_CITIES}
-        >
+        <Source id="israel_city" type="geojson" data={ISRAEL_CITIES}>
           <Layer {...Israel_City_Layer} beforeId={clusterLayer.id} />
           <Layer {...Israel_City_Border_Layer} beforeId={clusterLayer.id} />
         </Source>
@@ -131,12 +145,14 @@ const IsraelMap = () => {
           <Layer {...Israel_District_Border_Layer} beforeId={clusterLayer.id} />
         </Source>
         <NavigationControl position="top-right" showCompass={false} />
-        {
-          pointDetails &&
-          <Popup longitude={pointDetails.geometry.coordinates[0]} latitude={pointDetails.geometry.coordinates[1]} >
+        {pointDetails && (
+          <Popup
+            longitude={pointDetails.geometry.coordinates[0]}
+            latitude={pointDetails.geometry.coordinates[1]}
+          >
             <div className="marker">{pointDetails.properties.name}</div>
           </Popup>
-        }
+        )}
       </Map>
     </div>
   );
