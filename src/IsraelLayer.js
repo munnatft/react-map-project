@@ -21,7 +21,7 @@ export const Israel_Border_Layer = {
 };
 
 export const Israel_District_Layer = {
-  id: "israel-district-layer",
+  id: "israel_district_layer",
   type: "fill",
   source: "israel_district",
   layout: {},

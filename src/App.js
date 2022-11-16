@@ -1,12 +1,13 @@
 import React from "react";
 import IsraelCityMap from "./IsraelCityMap";
-// import IsraelMap from "./IsraelMap";
+import "./App.css";
+import IsraelDistrictMap from "./IsraelDistrictMap";
 
 const App = () => {
   return (
     <div>
-      {/* <IsraelMap/> */}
-      <IsraelCityMap />
+      <IsraelDistrictMap />
+      {/* <IsraelCityMap /> */}
     </div>
   );
 };
