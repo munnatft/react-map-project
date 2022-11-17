@@ -5,8 +5,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1,
       properties: {
-        id: "haram-al-sharif",
-        name: "Haram-Al-Sharif",
+        id: "101495",
+        title: "מבנה תעשיה במבוא כרמל.",
+        name: "חיפה",
+        city: "יקנעם",
+        fullText: 'בניית מבנה תעשיה ומשרדים, בשטח של כ- 11,200 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -17,8 +20,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 2,
       properties: {
-        id: "western-wall-plaza",
-        name: "Wetsern Wall Plaza",
+        id: "116859",
+        title: "בית ספר תיכון נופים.",
+        name: "המרכז",
+        city: "מודיעין",
+        fullText:
+          'בניית בית ספר 42 כתות לימוד, ב- 6 קומות ואולם ספורט, בשטח של 8,700 מ"ר בנוי ומגרש בשטח 26 דונם.',
       },
       geometry: {
         type: "Point",
@@ -29,8 +36,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 3,
       properties: {
-        id: "tower-of-david",
-        name: "Tower Of David",
+        id: "141798",
+        title: "בניית גן ילדים באדם.",
+        name: "ירושלים",
+        city: "אדם",
+        fullText: 'בניית גן ילדים בשטח 150 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -41,8 +51,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 4,
       properties: {
-        id: "israel-museum",
-        name: "Israel Museum",
+        id: "143002",
+        title: "אביזוהר 8",
+        name: "ירושלים",
+        city: "ירושלים",
+        fullText:
+          "תוספת 5 קומות למבנה קיים לשימוש שטחי מסחר, ומחלקה סיעודית ודיור מוגן",
       },
       geometry: {
         type: "Point",
@@ -53,8 +67,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 5,
       properties: {
-        id: "via-dolorosa",
-        name: "Via Dolorosa",
+        id: "110334",
+        title: "דיור מוגן במתחם שפע טל.",
+        name: "המרכז",
+        city: "גבעתיים",
+        fullText:
+          "בניית דיור מוגן 350 יחידות דיור, במגדל בן 25 קומות ו- 3 קומות חניון תת קרקעי ושטחי מסחר.",
       },
       geometry: {
         type: "Point",
@@ -65,8 +83,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 6,
       properties: {
-        id: "kidron-street",
-        name: "Kidron Street",
+        id: "144993",
+        title: "מחיר למשתכן בטבעון.",
+        name: "חיפה",
+        city: "קרית טבעון",
+        fullText: "בניית 215 יחידות דיור ב- 26 בניינים בני 3 קומות.",
       },
       geometry: {
         type: "Point",
@@ -77,8 +98,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 7,
       properties: {
-        id: "religious-school",
-        name: "Religious School",
+        id: "132086",
+        title: "ש. שיטרית בשכונה דרומית.",
+        name: "הדרום",
+        city: "ירוחם",
+        fullText: "בניית 84 יחידות דיור ב- 12 בניינים. במסגרת מחיר למשתכן.",
       },
       geometry: {
         type: "Point",
@@ -89,8 +113,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 8,
       properties: {
-        id: "Mulberry Silk",
-        name: "Mulberry Silk",
+        id: "144994",
+        title: "מחיר למשתכן בעכו.",
+        name: "חיפה",
+        city: "עכו",
+        fullText: "בניית 205 יחידות דיור ב- 3 בניינים.",
       },
       geometry: {
         type: "Point",
@@ -101,8 +128,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 9,
       properties: {
-        id: "Jerusalem Stone Worldwide",
-        name: "Jerusalem Stone Worldwide",
+        id: "146614",
+        title: "קידר במרדכי זעירא.",
+        name: "השרון",
+        city: "רעננה",
+        fullText:
+          "בניית 24 יחידות דיור ב- 2 בניינים בני 7 קומות, דירות בנות 4,5 חדרים פנטהאוזים וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -113,8 +144,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 10,
       properties: {
-        id: "HoliBag",
-        name: "HoliBag",
+        id: "132665",
+        title: "ביאליק 35.",
+        name: "השרון",
+        city: "רעננה",
+        fullText:
+          'הריסת מבנה קיים ובניית 23 יח"ד במבנה בן 9 קומות הכולל 3 קומות חניון תת-קרקעי.',
       },
       geometry: {
         type: "Point",
@@ -125,8 +160,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 11,
       properties: {
-        id: "Post Office",
-        name: "Post Office",
+        id: "136621",
+        title: "קבוצת רכישה במגרש 3-4.",
+        name: "המרכז",
+        city: "גבעת שמואל",
+        fullText:
+          "בניית 180 יחדיות דיור, ב- 2 מגדלים בני 27 קומות, דירות בנות 4,5,6 חדרים פנטהאוזים ו- 3 קומות חניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -137,8 +176,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 12,
       properties: {
-        id: "Speedy Kef",
-        name: "Speedy Kef",
+        id: "113641",
+        title: "בנייה בשד' המוזיקה.",
+        name: "הדרום",
+        city: "שדרות",
+        fullText:
+          'בניית 155 יח"ד, 48 בניינים בוילות ובניינים בני 2-5 קומות, דירות בנות 3-5 חדרים.',
       },
       geometry: {
         type: "Point",
@@ -149,8 +192,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 13,
       properties: {
-        id: "גן תוסיה הכהן",
-        name: "גן תוסיה הכהן",
+        id: "139355",
+        title: "א.פ.י . נתיב בשכונת מורשת.",
+        name: "המרכז",
+        city: "מודיעין",
+        fullText:
+          "בניית 90 יחידות דיור, ב- 5 בניינים בני 6 קומות, דירות בנות 4,5, חדרים פנטהאוזים וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -161,8 +208,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 14,
       properties: {
-        id: "Old House",
-        name: "Old House",
+        id: "144768",
+        title: "מרכז מסחרי האורג.",
+        name: "המרכז",
+        city: "מודיעין",
+        fullText: 'בניית מרכז מסחרי בן 3 קומות, בשטח של 7,000 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -173,8 +223,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 15,
       properties: {
-        id: "Sweet Home in Jerusalem",
-        name: "Sweet Home in Jerusalem",
+        id: "139352",
+        title: "א.פ.י. נתיב בשכונה ד-1.",
+        name: "ירושלים",
+        city: "בית שמש",
+        fullText:
+          "בניית 280 יחידות דיור, ב- 10 בניינים בני 5-6 קומות, דירות בנות 3,4,5 חדרים וקומת מסחר.",
       },
       geometry: {
         type: "Point",
@@ -185,8 +239,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 16,
       properties: {
-        id: "Meat Bar",
-        name: "Meat Bar",
+        id: "147737",
+        title: "עבודות קירוי מעל מסילות רכבת",
+        name: "המרכז",
+        city: "בני ברק",
+        fullText:
+          "ביצוע עבודות קירוי מעל מסילות רכבת, עבודובטון מים ביוב ובריכת איגום באזור הצפוני של העיר בני ברק. העבודה מתבצעת במס חלקים",
       },
       geometry: {
         type: "Point",
@@ -197,8 +255,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 17,
       properties: {
-        id: "Alkhirbeh restaurant",
-        name: "Alkhirbeh restaurant",
+        id: "144770",
+        title: "מבנה דרומי ברמת אמיר.",
+        name: "ירושלים",
+        city: "ירושלים",
+        fullText: "בניית 29 יחידות דיור, בבניין בן 5 קומות.",
       },
       geometry: {
         type: "Point",
@@ -209,8 +270,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 18,
       properties: {
-        id: "Groto Restaurant",
-        name: "Groto Restaurant",
+        id: "160285",
+        title: "מזרחי ב ח- 300.",
+        name: "המרכז",
+        city: "חולון",
+        fullText: "בניית 11 יחידות דיור בבניין בן 7 קומות.",
       },
       geometry: {
         type: "Point",
@@ -221,8 +285,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 19,
       properties: {
-        id: "אולם אבני חן",
-        name: "אולם אבני חן",
+        id: "160284",
+        title: "בנייה במגרש 410.",
+        name: "המרכז",
+        city: "בת ים",
+        fullText: "בניית 73 יחידות דיור במגדל בן 20 קומות וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -233,8 +300,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 20,
       properties: {
-        id: "B Grill",
-        name: "B Grill",
+        id: "152504",
+        title: "תמל/ 1045 - אם המושבות",
+        name: "המרכז",
+        city: "בני ברק",
+        fullText: "ביצוע עבודות קירוי פיתוח ותשתית למתחם מגורים חדש",
       },
       geometry: {
         type: "Point",
@@ -245,8 +315,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 21,
       properties: {
-        id: "המקום שיש בו הכל",
-        name: "המקום שיש בו הכל",
+        id: "160286",
+        title: "תוספת בנייה במכללה.",
+        name: "השרון",
+        city: "כפר סבא",
+        fullText: "תוספת בנייה מכללה 3 קומות ומרתף.",
       },
       geometry: {
         type: "Point",
@@ -257,8 +330,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 22,
       properties: {
-        id: "Mitzpor HaElef",
-        name: "Mitzpor HaElef",
+        id: "160285",
+        title: "מזרחי ב ח- 300.",
+        name: "המרכז",
+        city: "חולון",
+        fullText: "בניית 11 יחידות דיור בבניין בן 7 קומות.",
       },
       geometry: {
         type: "Point",
@@ -269,8 +345,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 23,
       properties: {
-        id: "Green Shack Museum",
-        name: "Green Shack Museum",
+        id: "148907",
+        title: "עבודות תשתית במתחם ציפור.",
+        name: "המרכז",
+        city: "בני ברק",
+        fullText:
+          "עבודות תשתית, קידוחים, ריצוף, חשמל, תאורה ביוב תיעות וניקוז.",
       },
       geometry: {
         type: "Point",
@@ -281,8 +361,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 24,
       properties: {
-        id: "UN Post - Qana's Massacre 1996",
-        name: "UN Post - Qana's Massacre 1996",
+        id: "110112",
+        title: "אחים בוסקילה בשכ' כורדני.",
+        name: "חיפה",
+        city: "קרית מוצקין",
+        fullText:
+          "בניית 84 יחידות דיור, ב- 13 מבנים בני 3 קומות, דירות בנות 3,4,5 חדרים וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -293,8 +377,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 25,
       properties: {
-        id: "Museum of Hungarian",
-        name: "Museum of Hungarian",
+        id: "148941",
+        title: "אחים בוסקילה בשכ' השחר.",
+        name: "הדרום",
+        city: "דימונה",
+        fullText: "בניית 117 יחידות דיור.",
       },
       geometry: {
         type: "Point",
@@ -305,8 +392,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 26,
       properties: {
-        id: "Golani Museum",
-        name: "Golani Museum",
+        id: "104928",
+        title: "אחים בוסקילה ברמות הרכס.",
+        name: "הדרום",
+        city: "באר שבע",
+        fullText:
+          'בניית 88 יח"ד - 2 בניינים, בני 6 קומות דירות בנות 4,5 חדרים וחניון תת קרקעי, בשטח של כ-5,400 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -317,8 +408,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 27,
       properties: {
-        id: "Valley Museum, Kibbutz Yifat",
-        name: "Valley Museum, Kibbutz Yifat",
+        id: "79120",
+        title: "בוסקילה באילת גבעה 106.",
+        name: "הדרום",
+        city: "אילת",
+        fullText:
+          "325 יחידות דיור, 4 מגדלים בני 10-11 קומות, דירות בנות 2-5 קומות ו- 2 קומות חניון תת קרקעי, בשטח של 13 דונם.",
       },
       geometry: {
         type: "Point",
@@ -329,8 +424,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 28,
       properties: {
-        id: "Treasures in the Walls Museum",
-        name: "Treasures in the Walls Museum",
+        id: "147585",
+        title: 'תמ"א 38/א בבלוך 37.',
+        name: "המרכז",
+        city: "תל אביב",
+        fullText:
+          "הריסה ובניית 16 יחידות דיור בבניין בן 7 קומות, דירות בנות 4,5 חדרים וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -341,8 +440,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 29,
       properties: {
-        id: "Fisher House Museum",
-        name: "Fisher House Museum",
+        id: "156129",
+        title: "פינוי בינוי בבן יהודה 12-14.",
+        name: "השרון",
+        city: "הרצליה",
+        fullText:
+          "הריסה ובניית 34 יחידות דיור בבניין בן 7 קומות, דירות בנות 4,5 חדרים ו- 2קומות וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -353,8 +456,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 30,
       properties: {
-        id: "Nisco Museum of Mechanical Music",
-        name: "Nisco Museum of Mechanical Music",
+        id: "147588",
+        title: 'תמ"א 38 בשלמה בן יוסף 12.',
+        name: "המרכז",
+        city: "תל אביב",
+        fullText: "תוספת של 9 יחידות דיור ב- 2.5 קומות, דירות בנות 4,5 חדרים.",
       },
       geometry: {
         type: "Point",
@@ -365,8 +471,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 31,
       properties: {
-        id: "Beit Aaronsohn – Nili Museum",
-        name: "Beit Aaronsohn – Nili Museum",
+        id: "138321",
+        title: "פינוי בינוי ברח' הבנים 14.",
+        name: "השרון",
+        city: "הרצליה",
+        fullText:
+          "הריסה ובניית 20 יחידות דיור, בבניין בן 7 קומות, דירות בנות 4,5 קומות.",
       },
       geometry: {
         type: "Point",
@@ -377,8 +487,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 32,
       properties: {
-        id: "Ralli Museum, Caesarea",
-        name: "Ralli Museum, Caesarea",
+        id: "147584",
+        title: 'תמ"א 38/א בחורגין 48.',
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          "הריסה ובניית 21 יחידות דיור, בבניין בן 7 קומות, דירות בנות 4,5 חדרים ו-2 קומות חניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -389,8 +503,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 33,
       properties: {
-        id: "The Old Courtyard Museum",
-        name: "The Old Courtyard Museum",
+        id: "160287",
+        title: "פינוי בינוי בבלוך 43-45.",
+        name: "המרכז",
+        city: "תל אביב",
+        fullText: "הריסה ובניית 2 בניינים בני 8 קומות.",
       },
       geometry: {
         type: "Point",
@@ -401,8 +518,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 34,
       properties: {
-        id: "The Well House Museum (Beit Habe'er)",
-        name: "The Well House Museum (Beit Habe'er)",
+        id: "132443",
+        title: 'תמ"א 38 בזינגר 11.',
+        name: "חיפה",
+        city: "קרית ביאליק",
+        fullText:
+          'תוספת 6 יחידות דיור, ב- 2.5 קומות דירות בנות 5 חדרים ופנטהאוזים. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -413,8 +534,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 35,
       properties: {
-        id: "Herzliya Museum of Contemporary Art",
-        name: "Herzliya Museum of Contemporary Art",
+        id: "153169",
+        title: "שיירה 28.",
+        name: "חיפה",
+        city: "חיפה",
+        fullText:
+          "בניית 12 יחידות דיור בבניין בן 6 קומות, דירות בנות 4,5 חדרים.",
       },
       geometry: {
         type: "Point",
@@ -425,8 +550,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 36,
       properties: {
-        id: "Rachaya Citadel (Citadel of Independence)",
-        name: "Rachaya Citadel (Citadel of Independence)",
+        id: "156148",
+        title: 'תמ"א 38 ברח" אלון.',
+        name: "חיפה",
+        city: "קרית ביאליק",
+        fullText: "תוספת של 6 יחידות דיור ב- 2.5 קומות, דירות בנות 4,5 חדרים.",
       },
       geometry: {
         type: "Point",
@@ -437,8 +565,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 37,
       properties: {
-        id: "Mleeta Landmark",
-        name: "Mleeta Landmark",
+        id: "160288",
+        title: "פינוי בינוי בששת הימים 34.",
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText: "הריסה ובניית 12 יחידות דיור  בבניין בן 6 קומות.",
       },
       geometry: {
         type: "Point",
@@ -449,8 +580,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 38,
       properties: {
-        id: "Hermon Stream Nature Reserve",
-        name: "Hermon Stream Nature Reserve",
+        id: "160289",
+        title: "בנייה בבן גוריון 41.",
+        name: "חיפה",
+        city: "קרית ביאליק",
+        fullText: "בניית 9 יחידות דיור בבניין בן 5 קומות.",
       },
       geometry: {
         type: "Point",
@@ -461,8 +595,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 39,
       properties: {
-        id: "Agamon Hula",
-        name: "Agamon Hula",
+        id: "160290",
+        title: "מוסך סדן",
+        name: "חיפה",
+        city: "עכו",
+        fullText:
+          "ביצוע עבודות שחזור מנה קיים, הכולל שיפוץ בקומה השניה, וחלוקה ל-4 יחידות אירוח וגלריות",
       },
       geometry: {
         type: "Point",
@@ -473,8 +611,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 40,
       properties: {
-        id: "Safed Puzzle Room",
-        name: "Safed Puzzle Room",
+        id: "160291",
+        title: "בית הטניס",
+        name: "חיפה",
+        city: "עכו",
+        fullText: "הקמת סככת פלדה וטריבונה",
       },
       geometry: {
         type: "Point",
@@ -485,8 +626,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 41,
       properties: {
-        id: "The Galilee Boat",
-        name: "The Galilee Boat",
+        id: "135600",
+        title: 'תמ"א 38 בהתיכון 52.',
+        name: "חיפה",
+        city: "חיפה",
+        fullText:
+          'תוספת של 5 יחידות דיור ב- 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -497,8 +642,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 42,
       properties: {
-        id: "Aqua Kef",
-        name: "Aqua Kef",
+        id: "135601",
+        title: 'תמ"א 38 התיכון 21.',
+        name: "חיפה",
+        city: "חיפה",
+        fullText:
+          'תוספת של 5 יחידות דיור ב- 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -509,8 +658,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 43,
       properties: {
-        id: "Lol-art",
-        name: "Lol-art",
+        id: "128639",
+        title: 'תמ"א 38 ביורדי הסירה 4-8-14.',
+        name: "הדרום",
+        city: "אשדוד",
+        fullText:
+          "תוספת של 39 יחידות דיור, ב - 3 כניסות 2.5 קומות, דירות בנות 4,5, ופנטהאוז.",
       },
       geometry: {
         type: "Point",
@@ -521,8 +674,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 44,
       properties: {
-        id: "Gamla Nature Reserve",
-        name: "Gamla Nature Reserve",
+        id: "128634",
+        title: 'תמ"א 38 בשפירא 26.',
+        name: "הדרום",
+        city: "אשקלון",
+        fullText:
+          'תוספת של 20 יחידות דיור, ב- 3 כניסות 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -533,8 +690,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 45,
       properties: {
-        id: "Ajloun Castle",
-        name: "Ajloun Castle",
+        id: "160294",
+        title: "אדמונית החורש 28-32",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'בניית 5 יח"ד בני 2 קומות, בני 6-7 חדרים',
       },
       geometry: {
         type: "Point",
@@ -545,8 +705,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 46,
       properties: {
-        id: "The Forest Park",
-        name: "The Forest Park",
+        id: "156127",
+        title: "קרל נטר 10.",
+        name: "המרכז",
+        city: "ראשון לציון",
+        fullText: "תוספת של 16 יחידות דיור ב- 2.5 קומות, דירות בנות 4,5 חדרים.",
       },
       geometry: {
         type: "Point",
@@ -557,8 +720,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 47,
       properties: {
-        id: "Check Out Restaurant",
-        name: "Check Out Restaurant",
+        id: "98219",
+        title: "שבי ציון 16.",
+        name: "הדרום",
+        city: "אשדוד",
+        fullText:
+          "תוספת של 26 יחידות דיור ב-2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז לבניין קיים בן 4 קומות.",
       },
       geometry: {
         type: "Point",
@@ -569,8 +736,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 48,
       properties: {
-        id: "Al-Sheikh Restaurant",
-        name: "Al-Sheikh Restaurant",
+        id: "137453",
+        title: "בנייה במנוחה ונחלה.",
+        name: "המרכז",
+        city: "רחובות",
+        fullText: "בניית 52 יחידות דיור, במגדל בן 10 קומות.",
       },
       geometry: {
         type: "Point",
@@ -581,8 +751,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 49,
       properties: {
-        id: "Tamar Restaurant",
-        name: "Tamar Restaurant",
+        id: "128638",
+        title: 'תמ"א 38 בשפירא.',
+        name: "הדרום",
+        city: "אשקלון",
+        fullText:
+          'תוספת של 42 יחידות דיור ב- 5 בניינים ב- 4.5 קומות מעל הקיים דירות בנות 4,5,6 חדרים ופנטהאוז. במסגרת תמ"א 38. בשינוי תב"ע.',
       },
       geometry: {
         type: "Point",
@@ -593,8 +767,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 50,
       properties: {
-        id: "Abu Rami Restaurant",
-        name: "Abu Rami Restaurant",
+        id: "129531",
+        title: 'תמ"א 38 בקיבוץ גלויות 8.',
+        name: "הדרום",
+        city: "אשדוד",
+        fullText:
+          'תוספת 26 יחידות דיור וחיזוק 2 בניינים, ב- 2.5 קומות, דירות בנות 4,5 חדרים. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -605,8 +783,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 51,
       properties: {
-        id: "Ali's Restaurant",
-        name: "Ali's Restaurant",
+        id: "145254",
+        title: "תמ'א 38 בהאחים מליצ'נסקי 31.",
+        name: "המרכז",
+        city: "ראשון לציון",
+        fullText:
+          "תוספת של 7 יחידות דיור, ב- 2.5 קומות, דירות בנות 3,4 חדרים ופנטהאוז.",
       },
       geometry: {
         type: "Point",
@@ -617,8 +799,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 52,
       properties: {
-        id: "Dream Lounge Garden",
-        name: "Dream Lounge Garden",
+        id: "128640",
+        title: 'תמ"א 38 במבוא החמציץ 6.',
+        name: "הדרום",
+        city: "אשדוד",
+        fullText:
+          'תוספת של 28 יחידות דיור, ב-4 כניסות 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -629,8 +815,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 53,
       properties: {
-        id: "El-Dayaa Restaurant",
-        name: "El-Dayaa Restaurant",
+        id: "160295",
+        title: "אדמונית החורש 27-31",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'בניית 5 יח"ד בני 2 קומות, בני 6-7 חדרים',
       },
       geometry: {
         type: "Point",
@@ -641,8 +830,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 54,
       properties: {
-        id: "Restaurant Ayoub",
-        name: "Restaurant Ayoub",
+        id: "160296",
+        title: "אדמונית החורש 21-25",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'בניית 5 יח"ד בני 2 קומות, בני 6-7 חדרים',
       },
       geometry: {
         type: "Point",
@@ -653,8 +845,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 55,
       properties: {
-        id: "Manoushi Restaurant",
-        name: "Manoushi Restaurant",
+        id: "156012",
+        title: "בית ספר תיכון בית בינה",
+        name: "ירושלים",
+        city: "ירושלים",
+        fullText: "תוספת אגף לבית ספר קיים",
       },
       geometry: {
         type: "Point",
@@ -665,8 +860,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 56,
       properties: {
-        id: "VISTA MONTANA POOL & Restaurant",
-        name: "VISTA MONTANA POOL & Restaurant",
+        id: "153005",
+        title: "בית ספר יסודי במגרש צ-3",
+        name: "ירושלים",
+        city: "בית שמש",
+        fullText: "בניית בית ספר",
       },
       geometry: {
         type: "Point",
@@ -677,8 +875,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 57,
       properties: {
-        id: "Jabal Amel Restaurant",
-        name: "Jabal Amel Restaurant",
+        id: "156011",
+        title: "בית ספר אור מנחם",
+        name: "השרון",
+        city: "עמנואל",
+        fullText: "תוספת כיתות לימוד לבית ספר קיים",
       },
       geometry: {
         type: "Point",
@@ -689,8 +890,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 58,
       properties: {
-        id: "La Roche Caffe & Restaurant",
-        name: "La Roche Caffe & Restaurant",
+        id: "153002",
+        title: "בית כנסת נווה אילן",
+        name: "ירושלים",
+        city: "נווה אילן",
+        fullText: "בניית בית כנסת",
       },
       geometry: {
         type: "Point",
@@ -701,8 +905,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 59,
       properties: {
-        id: "Pedros Restaurant",
-        name: "Pedros Restaurant",
+        id: "153001",
+        title: "גני ילדים בנווה אילן",
+        name: "ירושלים",
+        city: "נווה אילן",
+        fullText: "בניית 2 כיתות גן",
       },
       geometry: {
         type: "Point",
@@ -713,8 +920,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 60,
       properties: {
-        id: "Pupa Restaurant",
-        name: "Pupa Restaurant",
+        id: "143491",
+        title: "בית ספר לבנים.",
+        name: "המרכז",
+        city: "מודיעין עלית",
+        fullText: "בניית בית ספר 8 כתות לימוד.",
       },
       geometry: {
         type: "Point",
@@ -725,8 +935,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 61,
       properties: {
-        id: "Jackie’s Restaurant",
-        name: "Jackie’s Restaurant",
+        id: "153000",
+        title: "גני ילדים במגרש 5510",
+        name: "המרכז",
+        city: "מודיעין עלית",
+        fullText: "בניית 6 כיתות גן",
       },
       geometry: {
         type: "Point",
@@ -737,8 +950,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 62,
       properties: {
-        id: "Rached Restaurant",
-        name: "Rached Restaurant",
+        id: "152999",
+        title: "בית ספר חטיבה צעירה",
+        name: "המרכז",
+        city: "מודיעין עלית",
+        fullText: "בניית בית ספר הכולל 16 כיתות",
       },
       geometry: {
         type: "Point",
@@ -749,8 +965,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 63,
       properties: {
-        id: "mazaj resto cafe",
-        name: "mazaj resto cafe",
+        id: "160297",
+        title: "אדמונית החורש 32-36",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'בניית 5 יח"ד בני 2 קומות, בני 6-7 חדרים',
       },
       geometry: {
         type: "Point",
@@ -761,8 +980,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 64,
       properties: {
-        id: "Hôpital de Marjayoun",
-        name: "Hôpital de Marjayoun",
+        id: "156861",
+        title: "נאות שקמה - אסום",
+        name: "הדרום",
+        city: "שדרות",
+        fullText:
+          'בניית 24 יח"ד ב-2 בניינים בני 3 קומות כולל חניות, בשטח מגרש של 2,947 מ"ר',
       },
       geometry: {
         type: "Point",
@@ -773,8 +996,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 65,
       properties: {
-        id: "Restaurant L'Os",
-        name: "Restaurant L'Os",
+        id: "160298",
+        title: "קולנוע חן",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'ביצוע עבודות שיפוץ הכולל שינוי חזיתות ותוספת ממ"מ',
       },
       geometry: {
         type: "Point",
@@ -785,8 +1011,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 66,
       properties: {
-        id: "Sô",
-        name: "Sô",
+        id: "160299",
+        title: "מרחב מוגן - הרצל, נאות הדקל",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'בניית 2 מרחבים מוגנים ציבוריים, בשטח בנוי של 110.56 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -797,8 +1026,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 67,
       properties: {
-        id: "מסעדת שלה",
-        name: "מסעדת שלה",
+        id: "125590",
+        title: "בנייה בהארי הקדוש.",
+        name: "המרכז",
+        city: "פתח תקווה",
+        fullText:
+          "בניית 18 יחידות דיור, בבניין בן 7 קומות, דירות בנות 3,4 חדרים ופנטהאוז.",
       },
       geometry: {
         type: "Point",
@@ -809,8 +1042,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 68,
       properties: {
-        id: "Nam",
-        name: "Nam",
+        id: "160300",
+        title: "חווה חקלאית - לימודית",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: 'הקמת חווה חקלאית לימודית וממ"מ, בשטח בנוי של כ-720 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -821,8 +1057,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 69,
       properties: {
-        id: "Hilton Beach",
-        name: "Hilton Beach",
+        id: "110155",
+        title: "יאפא.",
+        name: "המרכז",
+        city: "יפו",
+        fullText:
+          'תוספת בניית 108 יח"ד ב-3.5 קומות ל-6 בניינים, דירות בנות 2-4 חדרים, הכוולל דופלקס ו-3 חניונים תת-קרקעי ל-150 חניות, במסגרת תמ"א 38. בשטח כולל של כ-7.5 דונם.',
       },
       geometry: {
         type: "Point",
@@ -833,8 +1073,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 70,
       properties: {
-        id: "Dan Tel Aviv Hotel",
-        name: "Dan Tel Aviv Hotel",
+        id: "160301",
+        title: "מזרקה - שכונת הכרמים",
+        name: "הדרום",
+        city: "שדרות",
+        fullText: "הקמת מזרקה וחדר משאבות",
       },
       geometry: {
         type: "Point",
@@ -845,8 +1088,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 71,
       properties: {
-        id: "85/15",
-        name: "85/15",
+        id: "147467",
+        title: 'תמ"א 38 א" בגורדון 38.',
+        name: "המרכז",
+        city: "תל אביב",
+        fullText:
+          "הריסה ובניית 17 יחידות דיור בבניין בן 7 קומות, דירות בנות 4,5, חדרים פנטהאוז וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -857,8 +1104,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 72,
       properties: {
-        id: "2C",
-        name: "2C",
+        id: "116329",
+        title: "צוות ברקוביץ במנדלשט.",
+        name: "המרכז",
+        city: "תל אביב",
+        fullText:
+          "בניית 6 יחידות דיור בבניין בן 5.5 קומות, דירות בנות 5,6 חדרים.",
       },
       geometry: {
         type: "Point",
@@ -869,8 +1120,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 73,
       properties: {
-        id: "A",
-        name: "A",
+        id: "116330",
+        title: "צוות ברקוביץ ביבנה 4-6.",
+        name: "המרכז",
+        city: "תל אביב",
+        fullText:
+          "בניית 37 יחידות דיור בבניין בן 7 קומות, דירות בנות 4,5 חדרים פנטהאוז וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -881,8 +1136,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 74,
       properties: {
-        id: "The Norman Tel Aviv",
-        name: "The Norman Tel Aviv",
+        id: "160302",
+        title: "מגדל משרדים ברמת החייל.",
+        name: "המרכז",
+        city: "תל אביב",
+        fullText: "בניית מגדל משרדים בן 16 קומות.",
       },
       geometry: {
         type: "Point",
@@ -893,8 +1151,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 75,
       properties: {
-        id: "Malih",
-        name: "Malih",
+        id: "160303",
+        title: "גן ילדים - מגרש 500",
+        name: "הדרום",
+        city: "שדרות",
+        fullText:
+          'בניית גן ילדים ממוגן, הכולל 2 כיתות גן, בשטח בנוי של כ-300 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -905,8 +1167,13 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 76,
       properties: {
-        id: "стоянка",
-        name: "стоянка",
+        id: "160304",
+        title:
+          "עבודות תעשיות פיתוח וסלילה להרחבת צמתים קיימים שביל אופניים ברחוב ויצמן",
+        name: "השרון",
+        city: "רעננה",
+        fullText:
+          "עבודות תעשיות פיתוח וסלילה להרחבת צמתים קיימים שביל אופניים ברחוב ויצמן",
       },
       geometry: {
         type: "Point",
@@ -917,8 +1184,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 77,
       properties: {
-        id: "Givat Aliya Beach",
-        name: "Givat Aliya Beach",
+        id: "160305",
+        title: "ביצוע עבודות סימון כבישים",
+        name: "השרון",
+        city: "רעננה",
+        fullText: "ביצוע עבודות סימון כבישים",
       },
       geometry: {
         type: "Point",
@@ -929,8 +1199,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 78,
       properties: {
-        id: "HaSela Beach",
-        name: "HaSela Beach",
+        id: "145032",
+        title: "בניה במנדלי פינת העבודה.",
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText:
+          "בניית 18 יחידות דיור, במגדל בן 10 קומות, דירות בנות 4,5 חדרים פנטהאוז וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -941,8 +1215,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 79,
       properties: {
-        id: "Rishon LeTsiyon Beach",
-        name: "Rishon LeTsiyon Beach",
+        id: "145031",
+        title: "הדקלים 5",
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText:
+          "בניית 24 יחידות דיור, בבניין בן 5 קומות, דירות בנות 4,5 חדרים ופנטהאוז.",
       },
       geometry: {
         type: "Point",
@@ -953,8 +1231,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 80,
       properties: {
-        id: "Superland",
-        name: "Superland",
+        id: "145029",
+        title: "הברוש 8",
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText:
+          "בניית 40 יחידות דיור, במגדל בן 10 קומות, דירות בנות 4,5 חדרים פנטהאוז וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -965,8 +1247,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 81,
       properties: {
-        id: "Dune nature reserve",
-        name: "Dune nature reserve",
+        id: "134697",
+        title: "עצמאות 41.",
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText:
+          "בניית 56 יחידות דיור, בבניין בן 10 קומות, דירות בנות 4,5 חדרים פנטהאוז קומת מסחר וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -977,8 +1263,13 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 82,
       properties: {
-        id: "אי הצבים שמורת נחל שורק",
-        name: "אי הצבים שמורת נחל שורק",
+        id: "160306",
+        title:
+          "מיון מוקדם לביצוע עבודות שיפוצים והתאמות של משרדים לשימוש עיריית רמת גן בבניין ספיר ברח' תובל 40 רמת-גן",
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          "מיון מוקדם לביצוע עבודות שיפוצים והתאמות של משרדים לשימוש עיריית רמת גן בבניין ספיר ברח' תובל 40 רמת-גן",
       },
       geometry: {
         type: "Point",
@@ -989,8 +1280,13 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 83,
       properties: {
-        id: "El Buhaira Restaurant",
-        name: "El Buhaira Restaurant",
+        id: "160307",
+        title:
+          "לאספקת והתקנת מערכות מיזוג אוויר באולם ספורט בתיאטרון בית ראסל בעיר רמת ג ן",
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          "לאספקת והתקנת מערכות מיזוג אוויר באולם ספורט בתיאטרון בית ראסל בעיר רמת ג ן",
       },
       geometry: {
         type: "Point",
@@ -1001,8 +1297,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 84,
       properties: {
-        id: "Tickets",
-        name: "Tickets",
+        id: "160308",
+        title: "דר נופרים בחלקות 126-17.",
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText:
+          "בניית 10 קוטג'ים ו- 22 יחידות דיור ב- 2 בניינים בני 6 קומות וחניון.",
       },
       geometry: {
         type: "Point",
@@ -1013,8 +1313,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 85,
       properties: {
-        id: "BEST WAY RESTAURANT",
-        name: "BEST WAY RESTAURANT",
+        id: "160309",
+        title: "בנייה בהעצמאות 21.",
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText: "בניית 52 יחידות דיור ב- 2 בניינים בני 14,32 קומות.",
       },
       geometry: {
         type: "Point",
@@ -1025,8 +1328,13 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 86,
       properties: {
-        id: "Très Bon",
-        name: "Très Bon",
+        id: "160310",
+        title:
+          "לביצוע עבודות שיפוצים ותוספת בינוי במוסדות חינוך וציבור עבור עיריית רמת גן ",
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          "לביצוע עבודות שיפוצים ותוספת בינוי במוסדות חינוך וציבור עבור עיריית רמת גן ",
       },
       geometry: {
         type: "Point",
@@ -1037,8 +1345,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 87,
       properties: {
-        id: "More In",
-        name: "More In",
+        id: "114294",
+        title: "יורו ישראל בפסגת זאב.",
+        name: "ירושלים",
+        city: "ירושלים",
+        fullText:
+          'בניית 122 יח"ד, ב- 4 בניינים בני 9 קומות, דירות בנות 4-5 חדרים ו- 2 קומות חניון תת קרקעי.',
       },
       geometry: {
         type: "Point",
@@ -1049,8 +1361,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 88,
       properties: {
-        id: "The Platform",
-        name: "The Platform",
+        id: "130035",
+        title: "יורו ישראל אור ים.",
+        name: "הצפון",
+        city: "אור עקיבא",
+        fullText: "בניית 91 קוטג'ים בני 2 קומות, בני 6 חדרים",
       },
       geometry: {
         type: "Point",
@@ -1061,8 +1376,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 89,
       properties: {
-        id: "Museum of Psalms מוזיאון התהלים",
-        name: "Museum of Psalms מוזיאון התהלים",
+        id: "126222",
+        title: "סי. אנד. סקיי.",
+        name: "הדרום",
+        city: "אשקלון",
+        fullText:
+          "בניית 250 יחידות דיור, ב- 2 מגדלים בני 25 קומות, דירות בנות4,5 חדרים פנטהאוז וחניון תת קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -1073,8 +1392,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 90,
       properties: {
-        id: "Museum of Underground Prisoners",
-        name: "Museum of Underground Prisoners",
+        id: "153024",
+        title: "מגדלים בבן גוריון 121-123",
+        name: "המרכז",
+        city: "בת ים",
+        fullText:
+          "מגדל מגורים בן 15 קומות, דירות למגורים ,חדרי מלון מסחר וחניון תת קרקעי. מסחר וחניון.",
       },
       geometry: {
         type: "Point",
@@ -1085,8 +1408,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 91,
       properties: {
-        id: "Hebrew Music Museum",
-        name: "Hebrew Music Museum",
+        id: "153025",
+        title: 'בניית מרכז מסחרי בשטח 2,000 מ"ר.',
+        name: "המרכז",
+        city: "ראשון לציון",
+        fullText: 'בניית מרכז מסחרי 2 קומות בשטח 2,000 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -1097,8 +1423,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 92,
       properties: {
-        id: "Badd Giacaman Museum",
-        name: "Badd Giacaman Museum",
+        id: "156270",
+        title: "בנייה בנורדאו 29.",
+        name: "המרכז",
+        city: "בת ים",
+        fullText: "בניית 10 יחידות דיור בבניין בן 5 קומות.",
       },
       geometry: {
         type: "Point",
@@ -1109,8 +1438,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 93,
       properties: {
-        id: "The Israel Museum, Jerusalem",
-        name: "The Israel Museum, Jerusalem",
+        id: "153023",
+        title: "מרכז מסחרי בנחלת.",
+        name: "המרכז",
+        city: "ראשון לציון",
+        fullText: 'בניית מרכז מסחרי וחניון בשטח 3,000 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -1121,8 +1453,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 94,
       properties: {
-        id: "Ein Yael outdoor museum",
-        name: "Ein Yael outdoor museum",
+        id: "160311",
+        title: "שיפוץ הספרייה העירונית מרכז תרבות - ערד",
+        name: "הדרום",
+        city: "ערד",
+        fullText: "שיפוץ הספרייה העירונית מרכז תרבות - ערד",
       },
       geometry: {
         type: "Point",
@@ -1133,8 +1468,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 95,
       properties: {
-        id: "Petach Tikva Museum of Art",
-        name: "Petach Tikva Museum of Art",
+        id: "156380",
+        title: 'מרלו"ג לחברת אוריין.',
+        name: "חיפה",
+        city: "קרית אתא",
+        fullText: "בניית מרכז לוגיסטי.",
       },
       geometry: {
         type: "Point",
@@ -1145,8 +1483,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 96,
       properties: {
-        id: "The Steinhardt Museum of Natural History",
-        name: "The Steinhardt Museum of Natural History",
+        id: "156381",
+        title: "הרחבת מפעל דיאגנוסטיקה.",
+        name: "הצפון",
+        city: "מגדל העמק",
+        fullText: "בניית מבנה לתעשייה.",
       },
       geometry: {
         type: "Point",
@@ -1157,8 +1498,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 97,
       properties: {
-        id: "Palmach Museum",
-        name: "Palmach Museum",
+        id: "156378",
+        title: "מפעל מתכות גלבוע.",
+        name: "הצפון",
+        city: "מועצה אזורית גלבוע",
+        fullText: "בניית מפעל מתכות.",
       },
       geometry: {
         type: "Point",
@@ -1169,8 +1513,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 98,
       properties: {
-        id: "Lehi Museum",
-        name: "Lehi Museum",
+        id: "156376",
+        title: "דאון טאון חיפה.",
+        name: "חיפה",
+        city: "חיפה",
+        fullText: "בניית מרכז לוגיסטי.",
       },
       geometry: {
         type: "Point",
@@ -1181,8 +1528,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 99,
       properties: {
-        id: "The Israeli Childhood Museum",
-        name: "The Israeli Childhood Museum",
+        id: "156375",
+        title: 'בניית מרלו"ג 16/א במודיעין.',
+        name: "המרכז",
+        city: "מודיעין",
+        fullText: "בניית מרכז לוגיסטי לחב' אביבית.",
       },
       geometry: {
         type: "Point",
@@ -1193,8 +1543,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 100,
       properties: {
-        id: "Rishon Lezion Museum",
-        name: "Rishon Lezion Museum",
+        id: "160312",
+        title: "עבודות אחזקת כבישים ומדרכות במרחב הציבורי",
+        name: "ירושלים",
+        city: "ירושלים",
+        fullText:
+          'עבודות אחזקת כבישים ומדרכות במרחב הציבורי.לקבוע כזוכה את: גשר חפירה וחציבה בע"מ, לתקופת ניסיון של חצי שנה. לקבוע כ"כשיר נוסף" את מ. בראשי תשתיות',
       },
       geometry: {
         type: "Point",
@@ -1205,8 +1559,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 101,
       properties: {
-        id: "Jaffa Museum",
-        name: "Jaffa Museum",
+        id: "132405",
+        title: 'תמ"א 38 באילון 24.',
+        name: "חיפה",
+        city: "קרית ביאליק",
+        fullText:
+          'תוספת 6 יחידות דיור, ב- 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1217,8 +1575,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 102,
       properties: {
-        id: "Ilana Goor Museum",
-        name: "Ilana Goor Museum",
+        id: "132400",
+        title: "פינוי בינוי בגורדון 45.",
+        name: "השרון",
+        city: "נתניה",
+        fullText: "הרית 31 יחידות דיור ובניית 118 יחידות דיור.",
       },
       geometry: {
         type: "Point",
@@ -1229,8 +1590,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 103,
       properties: {
-        id: "Khan el-Khalili",
-        name: "Khan el-Khalili",
+        id: "132501",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1241,8 +1605,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 104,
       properties: {
-        id: "The Egyptian Museum",
-        name: "The Egyptian Museum",
+        id: "132502",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1253,8 +1620,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 105,
       properties: {
-        id: "Old House Gallery",
-        name: "Old House Gallery",
+        id: "132503",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1265,8 +1635,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 106,
       properties: {
-        id: "Cairo Tower",
-        name: "Cairo Tower",
+        id: "132504",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1277,8 +1650,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 107,
       properties: {
-        id: "Giza Necropolis",
-        name: "Giza Necropolis",
+        id: "132505",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1289,8 +1665,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 108,
       properties: {
-        id: "Petra",
-        name: "Petra",
+        id: "132506",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1301,8 +1680,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 109,
       properties: {
-        id: "ANU Museum of the Jewish People",
-        name: "ANU Museum of the Jewish People",
+        id: "132507",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1313,8 +1695,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 110,
       properties: {
-        id: "Nesher Park",
-        name: "Nesher Park",
+        id: "132508",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1325,8 +1710,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 111,
       properties: {
-        id: "גן האם",
-        name: "גן האם",
+        id: "132509",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1337,8 +1725,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 112,
       properties: {
-        id: "Madatech - Israel National Museum of Science, Technology and Space",
-        name: "Madatech - Israel National Museum of Science, Technology and Space",
+        id: "132510",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1349,8 +1740,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 113,
       properties: {
-        id: "Baha'i Gardens Haifa",
-        name: "Baha'i Gardens Haifa",
+        id: "1325011",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1361,8 +1755,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 114,
       properties: {
-        id: "Haifa Museum of Art",
-        name: "Haifa Museum of Art",
+        id: "1325012",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1373,8 +1770,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 115,
       properties: {
-        id: "Shrine of the Báb (Bahá’í Holy Place)",
-        name: "Shrine of the Báb (Bahá’í Holy Place)",
+        id: "1325013",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1385,8 +1785,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 116,
       properties: {
-        id: "Sculptures Garden",
-        name: "Sculptures Garden",
+        id: "1325014",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1397,8 +1800,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 117,
       properties: {
-        id: "מוזיאון העיר, חיפה",
-        name: "מוזיאון העיר, חיפה",
+        id: "1325015",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1409,8 +1815,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 118,
       properties: {
-        id: "Stella Maris Monastery",
-        name: "Stella Maris Monastery",
+        id: "1325016",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1421,8 +1830,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 119,
       properties: {
-        id: "National Maritime Museum",
-        name: "National Maritime Museum",
+        id: "1325017",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1433,8 +1845,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 120,
       properties: {
-        id: "Cave of Elijah",
-        name: "Cave of Elijah",
+        id: "1325018",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1445,8 +1860,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 121,
       properties: {
-        id: "Clandestine Immigration and Naval Museum",
-        name: "Clandestine Immigration and Naval Museum",
+        id: "1325019",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1457,8 +1875,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 122,
       properties: {
-        id: "Shrimps House",
-        name: "Shrimps House",
+        id: "1325020",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1469,8 +1890,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 123,
       properties: {
-        id: "טיילת בת גלים",
-        name: "טיילת בת גלים",
+        id: "1325021",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1481,8 +1905,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 124,
       properties: {
-        id: "Salamtruck",
-        name: "Salamtruck",
+        id: "1325022",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1493,8 +1920,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 125,
       properties: {
-        id: "Institute for Seas and Lakes Research",
-        name: "Institute for Seas and Lakes Research",
+        id: "1325023",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1505,8 +1935,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 126,
       properties: {
-        id: "National Institute of Oceanography",
-        name: "National Institute of Oceanography",
+        id: "1325024",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1517,8 +1950,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 127,
       properties: {
-        id: "העוגן",
-        name: "העוגן",
+        id: "1325025",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1529,8 +1965,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 128,
       properties: {
-        id: "Skatepark of Haifa",
-        name: "Skatepark of Haifa",
+        id: "1325026",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1541,8 +1980,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 129,
       properties: {
-        id: "Sonol Sha'ar ha-Aliya",
-        name: "Sonol Sha'ar ha-Aliya",
+        id: "1325027",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1553,8 +1995,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 130,
       properties: {
-        id: "מתחם פארק המשפחה הנגיש בפארק הכט",
-        name: "מתחם פארק המשפחה הנגיש בפארק הכט",
+        id: "1325028",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1565,8 +2010,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1000,
       properties: {
-        id: "Petach Tikva Museum of Art",
-        name: "Petach Tikva Museum of Art",
+        id: "128779",
+        title: 'תמ"א 38 חבצלת 1.',
+        name: "חיפה",
+        city: "קרית ביאליק",
+        fullText:
+          'תוספת 3 קומות, 6 יח"ד, ניצול חלק מקומת עמודים למגורים, דירות בנות 5 חדרים הכולל דירות גן ופהנטאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1577,8 +2026,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1001,
       properties: {
-        id: "The Israeli Childhood Museum",
-        name: "The Israeli Childhood Museum",
+        id: "132401",
+        title: 'תמ"א 38 ביהודה הנשיא 27-29.',
+        name: "השרון",
+        city: "נתניה",
+        fullText:
+          'תוספת 20 יחידות דיור ב- 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. מסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1589,8 +2042,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1002,
       properties: {
-        id: "Israeli Cartoon Museum",
-        name: "Israeli Cartoon Museum",
+        id: "144800",
+        title: 'תמ"א 38 בהכרמל 34.',
+        name: "המרכז",
+        city: "תל אביב",
+        fullText:
+          "הריסה ובניית 17 יחידות דיור בבניין בן 5 קומות, דירות בנות 4,5 חדרים פנטהאוזים מחסנים וחניון עילי.",
       },
       geometry: {
         type: "Point",
@@ -1601,8 +2058,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1003,
       properties: {
-        id: "Jaffa Museum",
-        name: "Jaffa Museum",
+        id: "124371",
+        title: 'עיבוי בינוי במח"ל 37.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          'תוספת 6 קומות לבנין בן 4 קומות, סה"כ 50 יח"ד דירות בנות 3-6 חדרים.',
       },
       geometry: {
         type: "Point",
@@ -1613,8 +2074,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1004,
       properties: {
-        id: "The Israel Museum, Jerusalem",
-        name: "The Israel Museum, Jerusalem",
+        id: "139689",
+        title: 'עיבוי בינוי במח"ל 29.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          "עיבוי בינוי תוספת של 30 יחידות דיור חדשות, ב- 6 קומות, דירות בנות 4,5, חדרים ופנטהאוזים.",
       },
       geometry: {
         type: "Point",
@@ -1625,8 +2090,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1005,
       properties: {
-        id: "Museum of Psalms מוזיאון התהלים",
-        name: "Museum of Psalms מוזיאון התהלים",
+        id: "139687",
+        title: 'עיבוי בינוי במח"ל 35.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          "עיבוי בינוי תוספת של 35 יחידות דיור ב- 2 מבנים ב- 6 קומות חדשות, דירות בנות 4,5 חדרים ופנטהאוז.",
       },
       geometry: {
         type: "Point",
@@ -1637,8 +2106,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1006,
       properties: {
-        id: "Ilana Goor Museum",
-        name: "Ilana Goor Museum",
+        id: "139688",
+        title: 'עיבוי בינוי במח"ל 41.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          "עיבוי בינוי ב- 2 מבנים, תוספת של 30 יחידות דיור, ב- 6 קומות חדשות, דירות בנות 4,5, חדרים ופנטהאוזים.",
       },
       geometry: {
         type: "Point",
@@ -1649,8 +2122,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1007,
       properties: {
-        id: "Shakshukia",
-        name: "Shakshukia",
+        id: "139686",
+        title: 'עיבוי בינוי במח"ל 33.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          "עיבוי מבנה תוספת של 30 יחידות דיור, ב-6 קומות, דירות בנות 4,5 חדרים ופנטהאוזים.",
       },
       geometry: {
         type: "Point",
@@ -1661,8 +2138,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1008,
       properties: {
-        id: "Gusto",
-        name: "Gusto",
+        id: "139691",
+        title: 'עיבוי בינוי במח"ל 39.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          "עיבוי בינוי תוספת של 50 יחידות דיור ב- 6 קומות, דירות בנות 4,5 חדרים ופנטהאוזים.",
       },
       geometry: {
         type: "Point",
@@ -1673,8 +2154,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1009,
       properties: {
-        id: "Hapizza",
-        name: "Hapizza",
+        id: "139690",
+        title: 'עיבוי בינוי במח"ל 27.',
+        name: "חיפה",
+        city: "קרית חיים",
+        fullText:
+          "עיבוי בינוי תוספת של 30 יחידות דיור חדשות, ב- 6 קומות, דירות בנות 4,5, חדרים ופנטהאוזים.",
       },
       geometry: {
         type: "Point",
@@ -1685,8 +2170,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1010,
       properties: {
-        id: "Jasmino",
-        name: "Jasmino",
+        id: "139701",
+        title: 'תמ"א 38 בבן גוריון 53-49',
+        name: "השרון",
+        city: "הוד השרון",
+        fullText:
+          'חיזוק 3 מבנים קיימים ותוספת יח"ד ב-2 קומות למבנים בני 5 קומות מעל קומת עמודים. במסגרת תוכנית תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1697,8 +2186,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1011,
       properties: {
-        id: "Saluf & Sons",
-        name: "Saluf & Sons",
+        id: "118432",
+        title: "יהודה הלוי 8.",
+        name: "השרון",
+        city: "הרצליה",
+        fullText:
+          "הריסת בניין ובניית 13 יחידות, בבניין בן 8 קומות ומרתף חנייה.",
       },
       geometry: {
         type: "Point",
@@ -1709,8 +2202,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1012,
       properties: {
-        id: "Lebanese Restaurant",
-        name: "Lebanese Restaurant",
+        id: "137244",
+        title: 'תמ"א 38 בשמואל הנגיד 19',
+        name: "השרון",
+        city: "הרצליה",
+        fullText:
+          'חיזוק מבנה קיים ותוספת יח"ד ב-3 קומות, במסגרת תוכנית תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1721,8 +2218,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1013,
       properties: {
-        id: "The Jaffa, a Luxury Collection Hotel, Tel Aviv",
-        name: "The Jaffa, a Luxury Collection Hotel, Tel Aviv",
+        id: "126215",
+        title: 'תמ"א 38 בשברץ 5.',
+        name: "השרון",
+        city: "רעננה",
+        fullText:
+          'תוספת 8 יחידות דיור, ב- 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוז. במסגרת תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1733,8 +2234,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1014,
       properties: {
-        id: "Kalvin Boutique Hotel",
-        name: "Kalvin Boutique Hotel",
+        id: "131906",
+        title: "פינוי בינוי בשכ' אלי כהן.",
+        name: "השרון",
+        city: "תל מונד",
+        fullText:
+          "פינוי 102 יחידות דיור ובניית 450 יחידות דיור, דירות בנות 4,5,6 חדרים פנטהאוזים וחניון תת קרקעי, בשטח של 15 דונם.",
       },
       geometry: {
         type: "Point",
@@ -1745,8 +2250,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1015,
       properties: {
-        id: "The Drisco Hotel Tel Aviv",
-        name: "The Drisco Hotel Tel Aviv",
+        id: "132031",
+        title: 'תמ"א 38 בשמואל שרירא 34-42.',
+        name: "המרכז",
+        city: "ראשון לציון",
+        fullText:
+          'חיזוק מבנה קיים ותוספת יח"ד ב-2 קומות, במסגרת תוכנית תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1757,8 +2266,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1016,
       properties: {
-        id: "The Levee - Fine Stays",
-        name: "The Levee - Fine Stays",
+        id: "132030",
+        title: 'תמ"א 38 בשרירא שמואל 30-32.',
+        name: "המרכז",
+        city: "ראשון לציון",
+        fullText: 'חיזוק מבנה ותוספת יח"ד ב-2 קומות, במסגרת תוכנית תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1769,8 +2281,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1017,
       properties: {
-        id: "De' Mar Hotel",
-        name: "De' Mar Hotel",
+        id: "139461",
+        title: 'תמ"א 38 בצה"ל 67-73',
+        name: "המרכז",
+        city: "קרית אונו",
+        fullText:
+          'חיזוק מבנים קיימים בני 4 קומות ותוספת 22 יח"ד ב-2 קומות, דירות בנות 3-5 חדרים, הכולל דירות גן ופנטהאוזים וחניון תת-קרקעי, במסגרתתוכנית תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1781,8 +2297,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1018,
       properties: {
-        id: "Tel Aviv Sourasky Medical Center - Ichilov",
-        name: "Tel Aviv Sourasky Medical Center - Ichilov",
+        id: "139465",
+        title: 'תמ"א 38  בצה"ל 59-65',
+        name: "המרכז",
+        city: "קרית אונו",
+        fullText:
+          'חיזוק מבנים קיימים בני 4 קומות ותוספת בניית 22 יח"ד ב-2 קומות, דירות בנות 3-5 חדרים, הכולל דירות גן, פנטהאוזים וחניון תת-קרקעי, במסגרת תוכנית תמ"א 38.',
       },
       geometry: {
         type: "Point",
@@ -1793,8 +2313,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1019,
       properties: {
-        id: "Assuta Hospital in Ramat HaHayal",
-        name: "Assuta Hospital in Ramat HaHayal",
+        id: "132029",
+        title: 'תמ"א 38 בטשרניחובסקי 13 - אנילביץ 17.',
+        name: "השרון",
+        city: "כפר סבא",
+        fullText:
+          'חיזוק מבנה קיים ותוספת 12 יח"ד ב-2.5 קומות, דירות בנות 4 חדרים, הכולל דירת גן ופנטהאוז.',
       },
       geometry: {
         type: "Point",
@@ -1805,8 +2329,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1020,
       properties: {
-        id: "Meir Medical Center",
-        name: "Meir Medical Center",
+        id: "160313",
+        title: "שדה תעופה משלים ברמת דוד",
+        name: "הצפון",
+        city: "קיבוץ רמת דוד",
+        fullText: "הקמת שדה תעופה משלים",
       },
       geometry: {
         type: "Point",
@@ -1817,8 +2344,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1021,
       properties: {
-        id: "Cinémathèque - Jerusalem",
-        name: "Cinémathèque - Jerusalem",
+        id: "160315",
+        title: "שילוט עבור משטרת טייבה ",
+        name: "הצפון",
+        city: "טייבה",
+        fullText: "שילוט עבור משטרת טייבה ",
       },
       geometry: {
         type: "Point",
@@ -1829,8 +2359,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1022,
       properties: {
-        id: "Moshenson's Pharmacy",
-        name: "Moshenson's Pharmacy",
+        id: "160321",
+        title: "בורנשטיין 970",
+        name: "הדרום",
+        city: "ירוחם",
+        fullText: 'תוספת בניית ממ"מ ופיתוח- במבנה דיור מוגן קיים.',
       },
       geometry: {
         type: "Point",
@@ -1841,8 +2374,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1023,
       properties: {
-        id: "Mograbi Pharmacy",
-        name: "Mograbi Pharmacy",
+        id: "160322",
+        title: "בורנשטיין  931",
+        name: "הדרום",
+        city: "ירוחם",
+        fullText: "תוספת בניית 45 חדרי אירוח במבנה בן 3 קומות.",
       },
       geometry: {
         type: "Point",
@@ -1853,8 +2389,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1024,
       properties: {
-        id: "Pharmacy Yehuda Halevy",
-        name: "Pharmacy Yehuda Halevy",
+        id: "160323",
+        title: "מאדים 12",
+        name: "הדרום",
+        city: "ירוחם",
+        fullText: 'בניית מפעל ויקב, בשטח בנוי של כ-2000 מ"ר',
       },
       geometry: {
         type: "Point",
@@ -1865,8 +2404,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1025,
       properties: {
-        id: "Super Pharm",
-        name: "Super Pharm",
+        id: "145103",
+        title: 'תמ"א 38/2 תשי 11',
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          "הריסה ובניית 24 יחידות דיור, בבניין בן 9 קומות, דירות בנות 4,5 חדרים ופנטהאוז.",
       },
       geometry: {
         type: "Point",
@@ -1877,8 +2420,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1026,
       properties: {
-        id: "Rimona's pharmacy",
-        name: "Rimona's pharmacy",
+        id: "155837",
+        title: "רמת גן החדשה - The New Ramat Gan",
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          'הריסת מבנה קיים ובניית 56 יח"ד ב-2 מגדלים בני 10 קומות, דירות בנות 2-5 חדרים הכולל פנטהאוזים',
       },
       geometry: {
         type: "Point",
@@ -1889,8 +2436,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1027,
       properties: {
-        id: "North Pharmacy",
-        name: "North Pharmacy",
+        id: "149234",
+        title: 'בניית מקווה טהרה בשטח 120 מ"ר.',
+        name: "הצפון",
+        city: "עלמה",
+        fullText: 'בניית מקווה טהרה בשטח 120 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -1901,8 +2451,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1028,
       properties: {
-        id: "Clalit Pharmacy",
-        name: "Clalit Pharmacy",
+        id: "135548",
+        title: "מקווה במושב דלתון.",
+        name: "הצפון",
+        city: "מושב דלתון",
+        fullText: 'בניית מקווה בשטח 100 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -1913,8 +2466,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1029,
       properties: {
-        id: "Netanela",
-        name: "Netanela",
+        id: "136073",
+        title: "מקווה טוהרה בנווה זיו.",
+        name: "חיפה",
+        city: "מושב נווה זיו",
+        fullText: 'בניית מקווה טוהרה בשטח 120 מ".',
       },
       geometry: {
         type: "Point",
@@ -1925,8 +2481,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1030,
       properties: {
-        id: "Opera Tower",
-        name: "Opera Tower",
+        id: "136072",
+        title: "מקווה במושב מעונה.",
+        name: "הצפון",
+        city: "מעונה",
+        fullText: 'בניית מקווה טוהרה בשטח 120 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -1937,8 +2496,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1031,
       properties: {
-        id: "TLV Fashion Mall",
-        name: "TLV Fashion Mall",
+        id: "135547",
+        title: "הרחבה בקיבוץ מירב",
+        name: "הצפון",
+        city: "קיבוץ מירב",
+        fullText: 'תוספת יח"ד, דרכים ושטחים פתוחים.',
       },
       geometry: {
         type: "Point",
@@ -1949,8 +2511,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1032,
       properties: {
-        id: "Azrieli Mall",
-        name: "Azrieli Mall",
+        id: "135565",
+        title: "שכונה מערבית - מגדל העמק - שלב ב",
+        name: "הצפון",
+        city: "מגדל העמק",
+        fullText:
+          'בניית שכונת מגורים בת כ-2,900 יח"ד הכולל 230 יח"ד לדיור מוגן.',
       },
       geometry: {
         type: "Point",
@@ -1961,8 +2527,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1033,
       properties: {
-        id: "Weizmann City Mall",
-        name: "Weizmann City Mall",
+        id: "126968",
+        title: "זרזיר שכונה צפונית.",
+        name: "הצפון",
+        city: "בית זרזיר",
+        fullText: 'בניית שכונת מגורים חדשה הכולל כ-486 יח"ד.',
       },
       geometry: {
         type: "Point",
@@ -1973,8 +2542,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1034,
       properties: {
-        id: "Dizengoff Center",
-        name: "Dizengoff Center",
+        id: "130444",
+        title: 'שדרוג מט"ש שדה אילן',
+        name: "הצפון",
+        city: "שדה אילן",
+        fullText: 'שדרוג והרחבת מט"ש קיים לסיקה יומית של 12000 מק"ש',
       },
       geometry: {
         type: "Point",
@@ -1985,8 +2557,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1035,
       properties: {
-        id: "Miniso Supermarket",
-        name: "Miniso Supermarket",
+        id: "131854",
+        title: "מתקן פוטו וולטאי שדה דוד.",
+        name: "הדרום",
+        city: "מושב שדה דוד",
+        fullText: "הקמת מתקן פוטו וולטאי בהפסק של עד 16 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -1997,8 +2572,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1036,
       properties: {
-        id: "Arena Mall",
-        name: "Arena Mall",
+        id: "140050",
+        title: "מתקן פוטו וולטאי ביכורה - שדי תרומות",
+        name: "חיפה",
+        city: "מושב שדה תרומות",
+        fullText: "הקמת מתקן פוטו וולטאי  בהספק של כ-10 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2009,8 +2587,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1037,
       properties: {
-        id: "Ussishkin School",
-        name: "Ussishkin School",
+        id: "160325",
+        title: "חניון חרוד",
+        name: "הצפון",
+        city: "נוף הגליל (נצרת עילית)",
+        fullText: "הקמת חניון הכולל 200 מקומות חניה מוסדרים",
       },
       geometry: {
         type: "Point",
@@ -2021,8 +2602,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1038,
       properties: {
-        id: "Gvanim School",
-        name: "Gvanim School",
+        id: "160326",
+        title: "בית כנסת עטרת ראובן",
+        name: "המרכז",
+        city: "אלעד",
+        fullText: "בניית בית כנסת, הכולל קומת קרקע וגלריה",
       },
       geometry: {
         type: "Point",
@@ -2033,8 +2617,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1039,
       properties: {
-        id: "Arazim Elementary School",
-        name: "Arazim Elementary School",
+        id: "136662",
+        title: "הרחבת קרית החינוך - באר טוביה",
+        name: "המרכז",
+        city: "באר טוביה",
+        fullText: 'הקמת מבנה יביל עבור 2 בתי ספר בשטח 180 מ"ר',
       },
       geometry: {
         type: "Point",
@@ -2045,8 +2632,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1041,
       properties: {
-        id: "Meron School",
-        name: "Meron School",
+        id: "160328",
+        title: "כפר הנוער כנות",
+        name: "המרכז",
+        city: "כנות",
+        fullText: "תוספת כיתות לימוד לבית ספר קיים",
       },
       geometry: {
         type: "Point",
@@ -2057,8 +2647,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1042,
       properties: {
-        id: "Spring Cliffs Elementary School",
-        name: "Spring Cliffs Elementary School",
+        id: "160329",
+        title: "מבנה תעשייה - מגרש 101",
+        name: "המרכז",
+        city: "באר טוביה",
+        fullText: "בניית מבנה תעשייה הכולל שטחי אחסנה וחדר טרפו",
       },
       geometry: {
         type: "Point",
@@ -2069,8 +2662,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1043,
       properties: {
-        id: "Horvat Uza",
-        name: "Horvat Uza",
+        id: "160330",
+        title: "מרלוג - מגרש 500א",
+        name: "המרכז",
+        city: "באר טוביה",
+        fullText: "בניית מבנה מרלוג ומשרדים",
       },
       geometry: {
         type: "Point",
@@ -2081,8 +2677,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1044,
       properties: {
-        id: "Horvat Radum",
-        name: "Horvat Radum",
+        id: "160331",
+        title: "מיגון צפון - מגרש 45",
+        name: "הצפון",
+        city: "כפר יובל",
+        fullText:
+          'תוספת ממ"ד ב-10 חלקות (45,47,48,49,50,53,54,55,56), בשטח בנוי של 162 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -2093,8 +2693,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1045,
       properties: {
-        id: "Rosh Zohar Lookout",
-        name: "Rosh Zohar Lookout",
+        id: "160332",
+        title: "קירוי מגרש חניה",
+        name: "המרכז",
+        city: "קיבוץ רבדים",
+        fullText: 'קירוי מגרש חניה של בריכה, בשטח של 900 מ"ר.',
       },
       geometry: {
         type: "Point",
@@ -2105,8 +2708,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1046,
       properties: {
-        id: "Rogum Zohar",
-        name: "Rogum Zohar",
+        id: "160333",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2117,8 +2723,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1047,
       properties: {
-        id: "Monument in the Moav Outlook",
-        name: "Monument in the Moav Outlook",
+        id: "1325029",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2129,8 +2738,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1048,
       properties: {
-        id: "אל מול מואב",
-        name: "אל מול מואב",
+        id: "1325030",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2141,8 +2753,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1049,
       properties: {
-        id: "Amal Elementary School",
-        name: "Amal Elementary School",
+        id: "1325031",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2153,8 +2768,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1050,
       properties: {
-        id: 'בי"ס אבו קרינאת ב',
-        name: 'בי"ס אבו קרינאת ב',
+        id: "1325032",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2165,8 +2783,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1051,
       properties: {
-        id: "Succah in the Desert",
-        name: "Succah in the Desert",
+        id: "1325033",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2177,8 +2798,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1052,
       properties: {
-        id: "Shezaf Vineyard",
-        name: "Shezaf Vineyard",
+        id: "1325034",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2189,8 +2813,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1053,
       properties: {
-        id: "עילם שף פרטי",
-        name: "עילם שף פרטי",
+        id: "1325035",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2201,8 +2828,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1054,
       properties: {
-        id: "Mexicani",
-        name: "Mexicani",
+        id: "1325036",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2213,8 +2843,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1055,
       properties: {
-        id: "Camel Mount",
-        name: "Camel Mount",
+        id: "1325037",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2225,8 +2858,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1056,
       properties: {
-        id: "Deep Desert Israel Mitzpe Ramon",
-        name: "Deep Desert Israel Mitzpe Ramon",
+        id: "1325038",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2237,8 +2873,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1057,
       properties: {
-        id: "Noam bamidbar farms",
-        name: "Noam bamidbar farms",
+        id: "1325039",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2249,8 +2888,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1058,
       properties: {
-        id: "Hadasaar",
-        name: "Hadasaar",
+        id: "1325040",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2261,8 +2903,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1059,
       properties: {
-        id: "Training Base 1 officer school",
-        name: "Training Base 1 officer school",
+        id: "1325041",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2273,8 +2918,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1060,
       properties: {
-        id: "Ramon Reserve",
-        name: "Ramon Reserve",
+        id: "1325042",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2285,8 +2933,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1061,
       properties: {
-        id: "מצפור ברק ועמיחי",
-        name: "מצפור ברק ועמיחי",
+        id: "1325043",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 7.95 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2297,8 +2948,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1062,
       properties: {
-        id: "Har Gamal Viewpoint",
-        name: "Har Gamal Viewpoint",
+        id: "160334",
+        title: "קו מים - מי קולחין להשקייה- בית ניר",
+        name: "הדרום",
+        city: "קיבוץ בית ניר",
+        fullText:
+          'הנחת צינור תת-קרקעי בקוטר 36", באורך של כ- 17 ק"מ. קו לחץ גרויטציוני.',
       },
       geometry: {
         type: "Point",
@@ -2309,8 +2964,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1063,
       properties: {
-        id: "Mitzpe Ramon Visitors Center",
-        name: "Mitzpe Ramon Visitors Center",
+        id: "160336",
+        title: "מתקן פוטו-ולטאי - נחלה",
+        name: "המרכז",
+        city: "מושב נחלה",
+        fullText: "בניית מתקן פוטו-וולטאי בהספק של עד כ- 6.8 מגה וואט",
       },
       geometry: {
         type: "Point",
@@ -2321,8 +2979,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1064,
       properties: {
-        id: "Milky Way Trail Company",
-        name: "Milky Way Trail Company",
+        id: "160337",
+        title: "בזלת 2",
+        name: "הצפון",
+        city: "כרמיאל",
+        fullText: "בניית מבנה תעשייה",
       },
       geometry: {
         type: "Point",
@@ -2333,8 +2994,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1065,
       properties: {
-        id: "Salman Bedouin Hospitality Experience",
-        name: "Salman Bedouin Hospitality Experience",
+        id: "93820",
+        title: "מתחם אלדן - לוד.",
+        name: "המרכז",
+        city: "לוד",
+        fullText:
+          "בניית מבנה משרדים בן 8 קומות הכולל קומת מסחר ו-4 קומות חניון תת-קרקעי.",
       },
       geometry: {
         type: "Point",
@@ -2345,8 +3010,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1066,
       properties: {
-        id: "The Negev Mountain Reserve",
-        name: "The Negev Mountain Reserve",
+        id: "156077",
+        title: 'בית ספר ממ"ד אוהל שילה בנות',
+        name: "ירושלים",
+        city: "שילה",
+        fullText: "בניית בית ספר  	",
       },
       geometry: {
         type: "Point",
@@ -2357,8 +3025,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1067,
       properties: {
-        id: "חמוקי ניצנה",
-        name: "חמוקי ניצנה",
+        id: "152692",
+        title: "בית ספר אדם",
+        name: "ירושלים",
+        city: "אדם",
+        fullText: "בניית בית ספר הכולל 18 כיתות לימוד",
       },
       geometry: {
         type: "Point",
@@ -2369,8 +3040,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1068,
       properties: {
-        id: "נתיב השלום",
-        name: "נתיב השלום",
+        id: "152693",
+        title: "מרכז הפעלה שדות נגב",
+        name: "הדרום",
+        city: "שדות נגב (עזתה)",
+        fullText: "בניית מרכז הפעלה",
       },
       geometry: {
         type: "Point",
@@ -2381,8 +3055,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1069,
       properties: {
-        id: "ניצנה מרכז הדרכה",
-        name: "ניצנה מרכז הדרכה",
+        id: "142291",
+        title: 'תמ"א 38/2 ברוקח 48-50',
+        name: "המרכז",
+        city: "רמת גן",
+        fullText:
+          'הריסת מבנים קיימים ובניית 24 יח"ד ב-2 בניינים בני 8 קומות הכולל 2 קומות חניון תת-קרקעי, במסגרת תוכנית תמ"א 38/2',
       },
       geometry: {
         type: "Point",
@@ -2393,8 +3071,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1070,
       properties: {
-        id: "The archaeological site Nitzana",
-        name: "The archaeological site Nitzana",
+        id: "140200",
+        title: 'תמ"א 38 בסוקולוב 91.',
+        name: "המרכז",
+        city: "תל אביב",
+        fullText:
+          "תוספת של 4 יחידות דיור, ב- 2.5 קומות, דירות בנות 4,5 חדרים ופנטהאוזים.",
       },
       geometry: {
         type: "Point",
@@ -2405,8 +3087,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1071,
       properties: {
-        id: "",
-        name: "",
+        id: "160404",
+        title: "עבודות טיפול ותחזוקת ברזיות.",
+        name: "הדרום",
+        city: "אשדוד",
+        fullText: "עבודות טיפול ותחזוקת ברזיות.",
       },
       geometry: {
         type: "Point",
@@ -2417,8 +3102,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1072,
       properties: {
-        id: "Cave of the Patriarchs / Al Ibrahimi Mosque",
-        name: "Cave of the Patriarchs / Al Ibrahimi Mosque",
+        id: "160406",
+        title: "אספקה,הובלה,הקמה ופירוק במות לאירועים.",
+        name: "המרכז",
+        city: "חולון",
+        fullText: "אספקה,הובלה,הקמה ופירוק במות לאירועים.",
       },
       geometry: {
         type: "Point",
@@ -2429,8 +3117,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1073,
       properties: {
-        id: "Ancient Jewish Cemetery",
-        name: "Ancient Jewish Cemetery",
+        id: "160407",
+        title: "שדרוג בית מלאכה קישון.",
+        name: "חיפה",
+        city: "חיפה",
+        fullText: "שדרוג בית מלאכה קישון.",
       },
       geometry: {
         type: "Point",
@@ -2441,8 +3132,12 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1074,
       properties: {
-        id: "Ahmed bin Hanbal Mosque",
-        name: "Ahmed bin Hanbal Mosque",
+        id: "160408",
+        title: "הקמת מבנה האגף לשירותים חברתיים וחינוך",
+        name: "המרכז",
+        city: "נס ציונה",
+        fullText:
+          "הקמת מבנה האגף לשירותים חברתיים וחינוך לרבות עבודות הריסה, פיתוח, תשתיות וחניות בנס ציונה.",
       },
       geometry: {
         type: "Point",
@@ -2453,8 +3148,11 @@ export const PLACES_IN_ISRAEL = {
       type: "Feature",
       id: 1075,
       properties: {
-        id: "עין אדורה",
-        name: "עין אדורה",
+        id: "160409",
+        title: "חיזוק רצפת בטון בסככת צ'ק אין.",
+        name: "חיפה",
+        city: "חיפה",
+        fullText: "חיזוק רצפת בטון בסככת צ'ק אין.",
       },
       geometry: {
         type: "Point",
