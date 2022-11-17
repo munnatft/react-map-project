@@ -16,11 +16,14 @@ import {
 import { ISRAEL_DISTRICTS_DATA } from "./Israel/district";
 import "./App.css";
 
+const lng = 34.8516;
+const lat = 31.0461;
+
 const IsraelCityMap = () => {
   const mapRef = useRef(null);
   const [viewState, setViewState] = useState({
-    longitude: 34.8516,
-    latitude: 31.0461,
+    longitude: lng,
+    latitude: lat,
     zoom: 7,
   });
   const [pointData, setPointData] = useState(null);
