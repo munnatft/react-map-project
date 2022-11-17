@@ -1,5 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import Map, { Layer, NavigationControl, Popup, Source } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 import { PLACES_IN_ISRAEL } from "./Israel/places";
 import { ISRAEL_CITIES } from "./Israel/cities";
 import {
@@ -23,6 +24,7 @@ const IsraelCityMap = () => {
     zoom: 7,
   });
   const [pointData, setPointData] = useState(null);
+
   const onMapLoad = useCallback(() => {
     let hoverStatedId = null;
     mapRef.current.on("mousemove", Israel_City_Layer.id, (e) => {
@@ -52,7 +54,8 @@ const IsraelCityMap = () => {
       hoverStatedId = null;
     });
   }, []);
-  const onMapMarkerHandler = (e) => {
+
+  const onMapMarkerHoverHandler = (e) => {
     if (
       e.features.length > 0 &&
       e.features[0].layer.id === unclusteredPointLayer.id
@@ -60,9 +63,11 @@ const IsraelCityMap = () => {
       setPointData(e.features[0]);
     }
   };
+
   const onMapMarkerLeaveHandler = () => {
     setPointData(null);
   };
+
   return (
     <Map
       ref={mapRef}
@@ -78,7 +83,7 @@ const IsraelCityMap = () => {
         Israel_City_Layer.id,
       ]}
       onLoad={onMapLoad}
-      onMouseMove={onMapMarkerHandler}
+      onMouseMove={onMapMarkerHoverHandler}
       onMouseLeave={onMapMarkerLeaveHandler}
     >
       <Source
@@ -105,6 +110,7 @@ const IsraelCityMap = () => {
         <Popup
           longitude={pointData.geometry.coordinates[0]}
           latitude={pointData.geometry.coordinates[1]}
+          offset={10}
         >
           <div className="marker">{pointData.properties.name}</div>
         </Popup>
