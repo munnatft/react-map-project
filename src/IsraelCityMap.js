@@ -110,6 +110,7 @@ const IsraelCityMap = () => {
         <Popup
           longitude={pointData.geometry.coordinates[0]}
           latitude={pointData.geometry.coordinates[1]}
+          offset={10}
         >
           <div className="marker">{pointData.properties.name}</div>
         </Popup>

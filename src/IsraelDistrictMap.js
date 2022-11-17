@@ -21,7 +21,6 @@ const IsraelDistrictMap = () => {
     let hoverStatedId = null;
     let clickedId = null;
     mapRef.current.getCanvas().style.cursor = 'default';
-    // const map = mapRef.current.getMap()
     mapRef.current.on("mousemove", Israel_District_Layer.id, (e) => {
       console.log("mouse move event fired")
       if (e.features.length > 0) {
@@ -66,7 +65,7 @@ const IsraelDistrictMap = () => {
         clickedId = e.features[0].id;
         mapRef.current.setFeatureState(
           { source: "israel_district", id: clickedId },
-          { clicked: true }
+          { clicked: true, hover: false }
         );
       }
     });
@@ -107,12 +106,11 @@ const IsraelDistrictMap = () => {
         </Source>
         <NavigationControl position="top-right" showCompass={false} />
         {data && (
-          <Popup longitude={data.lng} latitude={data.lat}>
+          <Popup longitude={data.lng} latitude={data.lat} offset={30} >
             <div className="marker">{data.name}</div>
           </Popup>
         )}
       </Map>
-      {/* {data && <div className="data">{data}</div>} */}
     </div>
   );
 };
