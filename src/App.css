@@ -3,6 +3,9 @@
   font-weight: 500;
   font-style: italic;
   font-size: 1rem;
+  background-color: #3655b3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 
 }
 
 .data {

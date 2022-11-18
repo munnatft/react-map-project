@@ -28,7 +28,6 @@ const IsraelCityMap = () => {
     zoom: 7,
   });
   const [pointData, setPointData] = useState(null);
-  const [onHover, setOnHover] = useState(false);
 
   const onMapLoad = useCallback(() => {
     let hoverStatedId = null;
@@ -70,9 +69,7 @@ const IsraelCityMap = () => {
   };
 
   const onMapMarkerLeaveHandler = () => {
-    // if (!onHover) {
       setPointData(null);
-    // }
   };
 
   return (
@@ -118,10 +115,7 @@ const IsraelCityMap = () => {
           longitude={pointData.geometry.coordinates[0]}
           latitude={pointData.geometry.coordinates[1]}
           offset={10}
-          // onOpen={() => setOnHover(true)}
-          // onClose={() => setOnHover(false)}
         >
-          {/* <div className="marker">{pointData.properties.name}</div> */}
           <Card
             title={pointData.properties.title}
             city={pointData.properties.city}
