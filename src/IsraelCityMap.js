@@ -15,6 +15,7 @@ import {
 } from "./layer";
 import { ISRAEL_DISTRICTS_DATA } from "./Israel/district";
 import "./App.css";
+import Card from "./Card/Card";
 
 const IsraelCityMap = () => {
   const mapRef = useRef(null);
@@ -24,6 +25,7 @@ const IsraelCityMap = () => {
     zoom: 7,
   });
   const [pointData, setPointData] = useState(null);
+  const [onHover, setOnHover] = useState(false);
 
   const onMapLoad = useCallback(() => {
     let hoverStatedId = null;
@@ -31,14 +33,14 @@ const IsraelCityMap = () => {
       if (e.features.length > 0) {
         if (hoverStatedId) {
           mapRef.current.setFeatureState(
-            { source: "srael_city", id: hoverStatedId },
+            { source: "israel_city", id: hoverStatedId },
             { hover: false }
           );
         }
         hoverStatedId = e.features[0].id;
 
         mapRef.current.setFeatureState(
-          { source: "srael_city", id: hoverStatedId },
+          { source: "israel_city", id: hoverStatedId },
           { hover: true }
         );
       }
@@ -47,7 +49,7 @@ const IsraelCityMap = () => {
     mapRef.current.on("mouseleave", Israel_City_Layer.id, () => {
       if (hoverStatedId) {
         mapRef.current.setFeatureState(
-          { source: "srael_city", id: hoverStatedId },
+          { source: "israel_city", id: hoverStatedId },
           { hover: false }
         );
       }
@@ -65,7 +67,9 @@ const IsraelCityMap = () => {
   };
 
   const onMapMarkerLeaveHandler = () => {
-    setPointData(null);
+    // if (!onHover) {
+      setPointData(null);
+    // }
   };
 
   return (
@@ -98,7 +102,7 @@ const IsraelCityMap = () => {
         <Layer {...clusterCountLayer} />
         <Layer {...unclusteredPointLayer} />
       </Source>
-      <Source id="srael_city" type="geojson" data={ISRAEL_CITIES}>
+      <Source id="israel_city" type="geojson" data={ISRAEL_CITIES}>
         <Layer {...Israel_City_Layer} beforeId={clusterLayer.id} />
         <Layer {...Israel_City_Border_Layer} beforeId={clusterLayer.id} />
       </Source>
@@ -111,8 +115,15 @@ const IsraelCityMap = () => {
           longitude={pointData.geometry.coordinates[0]}
           latitude={pointData.geometry.coordinates[1]}
           offset={10}
+          // onOpen={() => setOnHover(true)}
+          // onClose={() => setOnHover(false)}
         >
-          <div className="marker">{pointData.properties.name}</div>
+          {/* <div className="marker">{pointData.properties.name}</div> */}
+          <Card
+            title={pointData.properties.title}
+            city={pointData.properties.city}
+            fullText={pointData.properties.fullText}
+          />
         </Popup>
       )}
     </Map>
