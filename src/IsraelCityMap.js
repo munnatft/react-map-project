@@ -68,9 +68,9 @@ const IsraelCityMap = () => {
     }
   };
 
-  const onMapMarkerLeaveHandler = () => {
-      setPointData(null);
-  };
+  const onMapMarkerLeaveHandler = useCallback((e) => {
+    setPointData(null);
+  },[]);
 
   return (
     <Map
@@ -87,8 +87,8 @@ const IsraelCityMap = () => {
         Israel_City_Layer.id,
       ]}
       onLoad={onMapLoad}
-      onMouseMove={onMapMarkerHoverHandler}
-      onMouseLeave={onMapMarkerLeaveHandler}
+      onMouseEnter={onMapMarkerHoverHandler}
+      // onMouseLeave={onMapMarkerLeaveHandler}
     >
       <Source
         id="israel-places-data"
@@ -120,6 +120,7 @@ const IsraelCityMap = () => {
             title={pointData.properties.title}
             city={pointData.properties.city}
             fullText={pointData.properties.fullText}
+            callback={onMapMarkerLeaveHandler}
           />
         </Popup>
       )}
