@@ -42,12 +42,14 @@ const IsraelCityMap = () => {
             { hover: false }
           );
         }
-        hoverStateIdRef.current = e.features[0].id;
+        if (!hoverPointIdRef.current) {
+          hoverStateIdRef.current = e.features[0].id;
 
-        mapRef.current.setFeatureState(
-          { source: sourceId.city, id: hoverStateIdRef.current },
-          { hover: true }
-        );
+          mapRef.current.setFeatureState(
+            { source: sourceId.city, id: hoverStateIdRef.current },
+            { hover: true }
+          );
+        }
       }
     });
 
@@ -63,16 +65,16 @@ const IsraelCityMap = () => {
   }, []);
 
   const onMapMarkerHoverHandler = (e) => {
-    if ( e.features.length > 0 && e.features[0].layer.id === unclusteredPointLayer.id ) {
+    if (
+      e.features.length > 0 &&
+      e.features[0].layer.id === unclusteredPointLayer.id
+    ) {
       mapRef.current.getCanvas().style.cursor = "pointer";
       hoverPointIdRef.current = e.features[0].id;
 
       mapRef.current.setFeatureState(
         { source: sourceId.place, id: hoverPointIdRef.current },
         { onHover: true }
-      );
-      mapRef.current.removeFeatureState(
-        { source: sourceId.city, id: hoverStateIdRef.current }
       );
       setPointData(e.features[0]);
     } else {
@@ -119,7 +121,11 @@ const IsraelCityMap = () => {
         <Layer {...Israel_City_Layer} beforeId={clusterLayer.id} />
         <Layer {...Israel_City_Border_Layer} beforeId={clusterLayer.id} />
       </Source>
-      <Source id={sourceId.district} type="geojson" data={ISRAEL_DISTRICTS_DATA}>
+      <Source
+        id={sourceId.district}
+        type="geojson"
+        data={ISRAEL_DISTRICTS_DATA}
+      >
         <Layer {...Israel_District_Border_Layer} beforeId={clusterLayer.id} />
       </Source>
       <NavigationControl position="top-right" showCompass={false} />

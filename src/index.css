@@ -37,6 +37,6 @@ code {
 .mapboxgl-popup-content {
   padding: 0rem !important;
   background: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  border-radius: 10px !important;
 }
