@@ -35,7 +35,7 @@ code {
 }
 
 .mapboxgl-popup-content {
-  padding: 0 !important;
+  padding: 0rem !important;
   background: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;

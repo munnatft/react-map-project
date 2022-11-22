@@ -16,6 +16,7 @@ import {
 import { ISRAEL_DISTRICTS_DATA } from "./Israel/district";
 import "./App.css";
 import Card from "./Card/Card";
+import { sourceId } from "./const";
 
 const lng = 34.8516;
 const lat = 31.0461;
@@ -28,49 +29,62 @@ const IsraelCityMap = () => {
     zoom: 7,
   });
   const [pointData, setPointData] = useState(null);
+  const hoverPointIdRef = useRef(null);
+  const hoverStateIdRef = useRef(null);
 
   const onMapLoad = useCallback(() => {
-    let hoverStatedId = null;
+    mapRef.current.getCanvas().style.cursor = "default";
     mapRef.current.on("mousemove", Israel_City_Layer.id, (e) => {
       if (e.features.length > 0) {
-        if (hoverStatedId) {
+        if (hoverStateIdRef.current) {
           mapRef.current.setFeatureState(
-            { source: "israel_city", id: hoverStatedId },
+            { source: sourceId.city, id: hoverStateIdRef.current },
             { hover: false }
           );
         }
-        hoverStatedId = e.features[0].id;
+        hoverStateIdRef.current = e.features[0].id;
 
         mapRef.current.setFeatureState(
-          { source: "israel_city", id: hoverStatedId },
+          { source: sourceId.city, id: hoverStateIdRef.current },
           { hover: true }
         );
       }
     });
 
     mapRef.current.on("mouseleave", Israel_City_Layer.id, () => {
-      if (hoverStatedId) {
+      if (hoverStateIdRef.current) {
         mapRef.current.setFeatureState(
-          { source: "israel_city", id: hoverStatedId },
+          { source: sourceId.city, id: hoverStateIdRef.current },
           { hover: false }
         );
       }
-      hoverStatedId = null;
+      hoverStateIdRef.current = null;
     });
   }, []);
 
   const onMapMarkerHoverHandler = (e) => {
-    if (
-      e.features.length > 0 &&
-      e.features[0].layer.id === unclusteredPointLayer.id
-    ) {
+    if ( e.features.length > 0 && e.features[0].layer.id === unclusteredPointLayer.id ) {
+      mapRef.current.getCanvas().style.cursor = "pointer";
+      hoverPointIdRef.current = e.features[0].id;
+
+      mapRef.current.setFeatureState(
+        { source: sourceId.place, id: hoverPointIdRef.current },
+        { onHover: true }
+      );
+      mapRef.current.removeFeatureState(
+        { source: sourceId.city, id: hoverStateIdRef.current }
+      );
       setPointData(e.features[0]);
+    } else {
+      mapRef.current.getCanvas().style.cursor = "default";
+      mapRef.current.setFeatureState(
+        { source: sourceId.place, id: hoverPointIdRef.current },
+        { onHover: false }
+      );
+      hoverPointIdRef.current = null;
+      setPointData(null);
     }
   };
-
-  const onMapMarkerLeaveHandler = useCallback((e) => {
-    setPointData(null);
-  },[]);
 
   return (
     <Map
@@ -87,11 +101,10 @@ const IsraelCityMap = () => {
         Israel_City_Layer.id,
       ]}
       onLoad={onMapLoad}
-      onMouseEnter={onMapMarkerHoverHandler}
-      // onMouseLeave={onMapMarkerLeaveHandler}
+      onMouseMove={onMapMarkerHoverHandler}
     >
       <Source
-        id="israel-places-data"
+        id={sourceId.place}
         type="geojson"
         data={PLACES_IN_ISRAEL}
         cluster={true}
@@ -102,11 +115,11 @@ const IsraelCityMap = () => {
         <Layer {...clusterCountLayer} />
         <Layer {...unclusteredPointLayer} />
       </Source>
-      <Source id="israel_city" type="geojson" data={ISRAEL_CITIES}>
+      <Source id={sourceId.city} type="geojson" data={ISRAEL_CITIES}>
         <Layer {...Israel_City_Layer} beforeId={clusterLayer.id} />
         <Layer {...Israel_City_Border_Layer} beforeId={clusterLayer.id} />
       </Source>
-      <Source id="israel_district" type="geojson" data={ISRAEL_DISTRICTS_DATA}>
+      <Source id={sourceId.district} type="geojson" data={ISRAEL_DISTRICTS_DATA}>
         <Layer {...Israel_District_Border_Layer} beforeId={clusterLayer.id} />
       </Source>
       <NavigationControl position="top-right" showCompass={false} />
@@ -114,13 +127,12 @@ const IsraelCityMap = () => {
         <Popup
           longitude={pointData.geometry.coordinates[0]}
           latitude={pointData.geometry.coordinates[1]}
-          offset={10}
+          offset={15}
         >
           <Card
             title={pointData.properties.title}
             city={pointData.properties.city}
             fullText={pointData.properties.fullText}
-            callback={onMapMarkerLeaveHandler}
           />
         </Popup>
       )}

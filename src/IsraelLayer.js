@@ -1,3 +1,5 @@
+import { sourceId } from "./const";
+
 export const Israel_Layer = {
   id: "israel_layer",
   type: "fill",
@@ -23,7 +25,7 @@ export const Israel_Border_Layer = {
 export const Israel_District_Layer = {
   id: "israel_district_layer",
   type: "fill",
-  source: "israel_district",
+  source: sourceId.district,
   layout: {},
   paint: {
     "fill-color": [
@@ -41,7 +43,7 @@ export const Israel_District_Layer = {
 export const Israel_District_Border_Layer = {
   id: "israel-district-border-layer",
   type: "line",
-  source: "israel_district",
+  source: sourceId.district,
   layout: {},
   paint: {
     "line-color": "#C1BDA9",
@@ -52,7 +54,7 @@ export const Israel_District_Border_Layer = {
 export const Israel_City_Layer = {
   id: "israel-city-layer",
   type: "fill",
-  source: "israel_city",
+  source: sourceId.city,
   layout: {},
   paint: {
     "fill-color": "#b37400",
@@ -68,7 +70,7 @@ export const Israel_City_Layer = {
 export const Israel_City_Border_Layer = {
   id: "israel-city-border-layer",
   type: "line",
-  source: "israel_city",
+  source: sourceId.city,
   layout: {},
   paint: {
     "line-color": "#C1BDA9",

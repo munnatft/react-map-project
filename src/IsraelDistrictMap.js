@@ -7,6 +7,7 @@ import {
   Israel_District_Layer,
 } from "./IsraelLayer";
 import { ISRAEL_DISTRICTS_DATA } from "./Israel/district";
+import { sourceId } from "./const";
 
 const IsraelDistrictMap = () => {
   const [viewState, setViewState] = useState({
@@ -16,25 +17,24 @@ const IsraelDistrictMap = () => {
   });
   const mapRef = useRef(null);
   const [data, setData] = useState(null);
+  const hoverStateIdRef = useRef(null);
+  const clickedIdRef = useRef(null);
 
   const onMapLoad = useCallback(() => {
-    let hoverStatedId = null;
-    let clickedId = null;
-    mapRef.current.getCanvas().style.cursor = 'default';
+    mapRef.current.getCanvas().style.cursor = "default";
     mapRef.current.on("mousemove", Israel_District_Layer.id, (e) => {
-      console.log("mouse move event fired")
       if (e.features.length > 0) {
-        if (hoverStatedId) {
+        if (hoverStateIdRef.current) {
           mapRef.current.setFeatureState(
-            { source: "israel_district", id: hoverStatedId },
+            { source: sourceId.district, id: hoverStateIdRef.current },
             { hover: false }
-            );
-          }
-        hoverStatedId = e.features[0].id;
+          );
+        }
+        hoverStateIdRef.current = e.features[0].id;
         setData({ ...e.lngLat, ...e.features[0].properties });
-        if (hoverStatedId !== clickedId) {
+        if (hoverStateIdRef.current !== clickedIdRef.current) {
           mapRef.current.setFeatureState(
-            { source: "israel_district", id: hoverStatedId },
+            { source: sourceId.district, id: hoverStateIdRef.current },
             { hover: true }
           );
         }
@@ -42,29 +42,27 @@ const IsraelDistrictMap = () => {
     });
 
     mapRef.current.on("mouseleave", Israel_District_Layer.id, (e) => {
-      console.log("mouse leave event fired")
-      console.log(e)
-      if (hoverStatedId) {
+      if (hoverStateIdRef.current) {
         mapRef.current.setFeatureState(
-          { source: "israel_district", id: hoverStatedId },
+          { source: sourceId.district, id: hoverStateIdRef.current },
           { hover: false }
         );
       }
       setData(null);
-      hoverStatedId = null;
+      hoverStateIdRef.current = null;
     });
 
     mapRef.current.on("click", Israel_District_Layer.id, (e) => {
       if (e.features.length > 0) {
-        if (clickedId) {
+        if (clickedIdRef.current) {
           mapRef.current.setFeatureState(
-            { source: "israel_district", id: clickedId },
+            { source: sourceId.district, id: clickedIdRef.current },
             { clicked: false }
           );
         }
-        clickedId = e.features[0].id;
+        clickedIdRef.current = e.features[0].id;
         mapRef.current.setFeatureState(
-          { source: "israel_district", id: clickedId },
+          { source: sourceId.district, id: clickedIdRef.current },
           { clicked: true, hover: false }
         );
       }
@@ -97,7 +95,7 @@ const IsraelDistrictMap = () => {
         onDblClick={onDistrictAreaClickHandler}
       >
         <Source
-          id="israel_district"
+          id={sourceId.district}
           type="geojson"
           data={ISRAEL_DISTRICTS_DATA}
         >
@@ -106,7 +104,7 @@ const IsraelDistrictMap = () => {
         </Source>
         <NavigationControl position="top-right" showCompass={false} />
         {data && (
-          <Popup longitude={data.lng} latitude={data.lat} offset={30} >
+          <Popup longitude={data.lng} latitude={data.lat} offset={30}>
             <div className="marker">{data.name}</div>
           </Popup>
         )}
