@@ -1,0 +1,48 @@
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #61b2d6;
+  margin: 10px 0 10px 10px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+.icon:hover .iconToolTip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon img {
+  height: 15px;
+  width: 15px;
+}
+.icon .iconToolTip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.icon .iconTooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  background-color: #555;
+  border-color: #555 transparent transparent transparent;
+}
