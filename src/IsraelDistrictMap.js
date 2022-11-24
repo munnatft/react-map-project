@@ -11,14 +11,14 @@ import { sourceId } from "./const";
 
 const IsraelDistrictMap = () => {
   const [viewState, setViewState] = useState({
-    longitude: 34.8516,
-    latitude: 31.0461,
-    zoom: 7,
+    longitude: 35.5,
+    latitude: 31.5,
+    zoom: 6.5,
   });
   const mapRef = useRef(null);
   const [data, setData] = useState(null);
   const hoverStateIdRef = useRef(null);
-  const clickedIdRef = useRef(null);
+  const clickedIdRef = useRef([]);
 
   const onMapLoad = useCallback(() => {
     mapRef.current.getCanvas().style.cursor = "default";
@@ -32,7 +32,7 @@ const IsraelDistrictMap = () => {
         }
         hoverStateIdRef.current = e.features[0].id;
         setData({ ...e.lngLat, ...e.features[0].properties });
-        if (hoverStateIdRef.current !== clickedIdRef.current) {
+        if (!clickedIdRef.current.includes(hoverStateIdRef.current)) {
           mapRef.current.setFeatureState(
             { source: sourceId.district, id: hoverStateIdRef.current },
             { hover: true }
@@ -53,16 +53,20 @@ const IsraelDistrictMap = () => {
     });
 
     mapRef.current.on("click", Israel_District_Layer.id, (e) => {
-      if (e.features.length > 0) {
-        if (clickedIdRef.current) {
-          mapRef.current.setFeatureState(
-            { source: sourceId.district, id: clickedIdRef.current },
-            { clicked: false }
-          );
-        }
-        clickedIdRef.current = e.features[0].id;
+      if (e.features.length === 0) {
+        return;
+      }
+      const id = e.features[0].id
+      if(clickedIdRef.current.includes(id)) {
         mapRef.current.setFeatureState(
-          { source: sourceId.district, id: clickedIdRef.current },
+          { source: sourceId.district, id: id },
+          { clicked: false, hover: true }
+        );
+        clickedIdRef.current = clickedIdRef.current.filter(featureId => featureId !== id)
+      } else {
+        clickedIdRef.current.push(id)
+        mapRef.current.setFeatureState(
+          { source: sourceId.district, id: id },
           { clicked: true, hover: false }
         );
       }

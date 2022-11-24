@@ -6,8 +6,8 @@ import IsraelDistrictMap from "./IsraelDistrictMap";
 const App = () => {
   return (
     <div>
-      {/* <IsraelDistrictMap /> */}
-      <IsraelCityMap />
+      <IsraelDistrictMap />
+      {/* <IsraelCityMap /> */}
     </div>
   );
 };
