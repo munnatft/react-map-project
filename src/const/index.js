@@ -1,5 +1,6 @@
 export const sourceId = {
     city: "israel_city",
     district: "israel_district",
-    place: "israel_place"
+    place: "israel_place",
+    state:"israel_state"
 }

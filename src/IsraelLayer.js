@@ -18,7 +18,7 @@ export const Israel_Border_Layer = {
   layout: {},
   paint: {
     "line-color": "#C1BDA9",
-    "line-width": 3,
+    "line-width": 4,
   },
 };
 
@@ -46,8 +46,9 @@ export const Israel_District_Border_Layer = {
   source: sourceId.district,
   layout: {},
   paint: {
-    "line-color": "#C1BDA9",
-    "line-width": 5,
+    "line-color": "#c4c1b1",
+    "line-opacity":0.8,
+    "line-width": 2.8,
   },
 };
 
